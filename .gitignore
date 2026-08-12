@@ -1,0 +1,14 @@
+node_modules/
+.next/
+.source/
+out/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+
+# Screenshots are generated from the recordings by peersyst-video and, once the
+# bucket exists, served from it. Keeping binaries out of git is deliberate: a
+# guide gets regenerated often and git does not deduplicate PNGs.
+apps/web/public/help/

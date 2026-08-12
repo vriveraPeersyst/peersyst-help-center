@@ -1,0 +1,12 @@
+{
+  "name": "peersyst-help-center",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @peersyst-help/web",
+    "build": "npm run build --workspace @peersyst-help/web"
+  }
+}

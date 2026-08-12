@@ -1,0 +1,133 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "create-wallet",
+  "title": "Create your XRP wallet",
+  "description": "In this quick XRP Mobile walkthrough you'll create a self custody XRP wallet on the XRP Ledger, back up your recovery phrase and set a PIN. XRP Mobile is a noncustodial wallet where you can buy, send, receive and swap XRP. Perfect if you're getting started with XRP or self custody.",
+  "lede": "Want your XRP in a wallet that is truly yours? Let's set one up in under a minute.",
+  "video": {
+    "vertical": "../vertical.mp4",
+    "horizontal": "../horizontal.mp4",
+    "durationSec": 57.4
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Open XRP Mobile",
+      "body": "Open XRP Mobile. It's a self custody wallet, so the keys stay with you, not with an exchange.",
+      "anchor": "1-open-xrp-mobile",
+      "src": {
+        "startSec": 0,
+        "endSec": 5.4
+      },
+      "videoAtSec": 5.37,
+      "shots": [
+        {
+          "atSec": 1.6,
+          "file": "/help/xrp-mobile/create-wallet/step-1.png",
+          "alt": "Open XRP Mobile"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "Tap Create wallet",
+      "body": "Tap Create wallet. You could import one you already have, but today we start fresh.",
+      "anchor": "2-tap-create-wallet",
+      "src": {
+        "startSec": 5.4,
+        "endSec": 13.8
+      },
+      "videoAtSec": 11.47,
+      "shots": [
+        {
+          "atSec": 7.4,
+          "file": "/help/xrp-mobile/create-wallet/step-2.png",
+          "alt": "Tap Create wallet"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "Back up your recovery phrase",
+      "body": "Tap to reveal your recovery phrase, then write the 12 words down in order and store them somewhere safe. Anyone with these words can take your funds, so never share them.",
+      "anchor": "3-back-up-your-recovery-phrase",
+      "src": {
+        "startSec": 13.8,
+        "endSec": 16.3
+      },
+      "videoAtSec": 16.6,
+      "shots": [
+        {
+          "atSec": 14.8,
+          "file": "/help/xrp-mobile/create-wallet/step-3.png",
+          "alt": "Back up your recovery phrase"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "Name it and set your PIN",
+      "body": "Give your wallet a name if you like, then set a 4 digit PIN. You'll use it to unlock the app and sign transactions.",
+      "anchor": "4-name-it-and-set-your-pin",
+      "src": {
+        "startSec": 16.3,
+        "endSec": 24.5
+      },
+      "videoAtSec": 26.73,
+      "shots": [
+        {
+          "atSec": 16.5,
+          "file": "/help/xrp-mobile/create-wallet/step-4-1.png",
+          "alt": "Name it and set your PIN, screen 1 of 2"
+        },
+        {
+          "atSec": 18.4,
+          "file": "/help/xrp-mobile/create-wallet/step-4-2.png",
+          "alt": "Name it and set your PIN, screen 2 of 2"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "caption": "Wallet created",
+      "body": "And that's it, your XRPL account is ready. Tap Open wallet.",
+      "anchor": "5-wallet-created",
+      "src": {
+        "startSec": 24.5,
+        "endSec": 27.2
+      },
+      "videoAtSec": 33.83,
+      "shots": [
+        {
+          "atSec": 25.6,
+          "file": "/help/xrp-mobile/create-wallet/step-5.png",
+          "alt": "Wallet created"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "caption": "You're all set",
+      "body": "Allow notifications if you want to know when funds arrive, and welcome home: buy, send, receive and swap XRP, right from your pocket.",
+      "anchor": "6-youre-all-set",
+      "src": {
+        "startSec": 27.2,
+        "endSec": 29.4
+      },
+      "videoAtSec": 37.73,
+      "shots": [
+        {
+          "atSec": 28.2,
+          "file": "/help/xrp-mobile/create-wallet/step-6-1.png",
+          "alt": "You're all set, screen 1 of 2"
+        },
+        {
+          "atSec": 30.6,
+          "file": "/help/xrp-mobile/create-wallet/step-6-2.png",
+          "alt": "You're all set, screen 2 of 2"
+        }
+      ]
+    }
+  ]
+}

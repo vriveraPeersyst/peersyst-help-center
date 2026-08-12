@@ -1,0 +1,29 @@
+{
+  "brand": "xrp-mobile",
+  "guides": [
+    {
+      "id": "create-wallet",
+      "title": "Create your XRP wallet",
+      "description": "In this quick XRP Mobile walkthrough you'll create a self custody XRP wallet on the XRP Ledger, back up your recovery phrase and set a PIN. XRP Mobile is a noncustodial wallet where you can buy, send, receive and swap XRP. Perfect if you're getting started with XRP or self custody.",
+      "steps": 6
+    },
+    {
+      "id": "receive",
+      "title": "Receive XRP",
+      "description": "Learn how to receive XRP in XRP Mobile: open Receive, pick XRP, and share your deposit address or QR code. We also cover the XRP Ledger network warning and the 1 XRP minimum that activates a new account.",
+      "steps": 6
+    },
+    {
+      "id": "default-currency",
+      "title": "Change your default currency",
+      "description": "Quick XRP Mobile tutorial: change the app's default currency from Settings. The selector shows each currency's code, name and symbol, and search matches names too, so switching from euros to Japanese Yen takes seconds.",
+      "steps": 7
+    },
+    {
+      "id": "import-secret-numbers",
+      "title": "Import your Xaman account",
+      "description": "Step by step: import an existing XRP Ledger account into XRP Mobile using the 8 rows of Xaman secret numbers, set a PIN, and fund the address with the 1 XRP an account needs to activate on the ledger. Same address, same balance, and the keys stay on your phone. Never share your secret numbers with anyone.",
+      "steps": 8
+    }
+  ]
+}
