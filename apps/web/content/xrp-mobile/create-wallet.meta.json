@@ -6,8 +6,8 @@
   "description": "In this quick XRP Mobile walkthrough you'll create a self custody XRP wallet on the XRP Ledger, back up your recovery phrase and set a PIN. XRP Mobile is a noncustodial wallet where you can buy, send, receive and swap XRP. Perfect if you're getting started with XRP or self custody.",
   "lede": "Want your XRP in a wallet that is truly yours? Let's set one up in under a minute.",
   "video": {
-    "vertical": "../vertical.mp4",
-    "horizontal": "../horizontal.mp4",
+    "src": "/help/xrp-mobile/create-wallet/video.mp4",
+    "poster": "/help/xrp-mobile/create-wallet/poster.jpg",
     "durationSec": 57.4
   },
   "steps": [

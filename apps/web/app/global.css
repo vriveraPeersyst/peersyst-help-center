@@ -6,6 +6,30 @@ html {
   scrollbar-gutter: stable;
 }
 
+/* Step screenshots are phone captures, 720px wide and nearly 1600 tall. At the
+   prose's full width they tower over the sentence they illustrate, so they are
+   held to roughly the size a phone occupies in the hand. */
+.prose img {
+  max-width: 15rem;
+  height: auto;
+  border: 1px solid var(--color-fd-border);
+  border-radius: 0.75rem;
+}
+
+/* Two shots under one step read as a pair rather than a stack. */
+.prose p:has(> img) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* The walkthrough, on the other hand, wants the full column. */
+.prose video {
+  width: 100%;
+  border-radius: 0.75rem;
+  background: #000;
+}
+
 html > body[data-scroll-locked] {
   margin-right: 0px !important;
   --removed-body-scroll-bar-size: 0px !important;

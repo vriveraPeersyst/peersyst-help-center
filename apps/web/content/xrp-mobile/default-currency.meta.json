@@ -6,8 +6,8 @@
   "description": "Quick XRP Mobile tutorial: change the app's default currency from Settings. The selector shows each currency's code, name and symbol, and search matches names too, so switching from euros to Japanese Yen takes seconds.",
   "lede": "Prefer prices in yen, euros or dollars? Let's make XRP Mobile speak your currency.",
   "video": {
-    "vertical": "../vertical.mp4",
-    "horizontal": "../horizontal.mp4",
+    "src": "/help/xrp-mobile/default-currency/video.mp4",
+    "poster": "/help/xrp-mobile/default-currency/poster.jpg",
     "durationSec": 45.8
   },
   "steps": [

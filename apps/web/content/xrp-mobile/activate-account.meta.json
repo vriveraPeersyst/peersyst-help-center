@@ -6,8 +6,8 @@
   "description": "Every new XRP Ledger account needs 1 XRP before the ledger will hold it. In this XRP Mobile walkthrough you'll see where the activation card comes from, what the base reserve actually is, how to find your deposit address on the right network, and what changes the moment the funds land. Not financial advice.",
   "lede": "New wallet asking you to activate your account? Nothing is broken. Here is what the XRP Ledger wants, and why.",
   "video": {
-    "vertical": "../vertical.mp4",
-    "horizontal": "../horizontal.mp4",
+    "src": "/help/xrp-mobile/activate-account/video.mp4",
+    "poster": "/help/xrp-mobile/activate-account/poster.jpg",
     "durationSec": 72.4
   },
   "steps": [

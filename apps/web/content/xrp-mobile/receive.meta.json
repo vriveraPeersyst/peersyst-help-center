@@ -6,8 +6,8 @@
   "description": "Learn how to receive XRP in XRP Mobile: open Receive, pick XRP, and share your deposit address or QR code. We also cover the XRP Ledger network warning and the 1 XRP minimum that activates a new account.",
   "lede": "Need your XRP deposit address? Here's the safe way to find it, in seconds.",
   "video": {
-    "vertical": "../vertical.mp4",
-    "horizontal": "../horizontal.mp4",
+    "src": "/help/xrp-mobile/receive/video.mp4",
+    "poster": "/help/xrp-mobile/receive/poster.jpg",
     "durationSec": 54.3
   },
   "steps": [
