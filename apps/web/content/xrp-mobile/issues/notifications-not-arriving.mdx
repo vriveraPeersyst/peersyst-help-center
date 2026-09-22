@@ -1,0 +1,30 @@
+---
+title: "Notifications never arrive"
+description: "Push permission belongs to the phone, not the app, and iOS only asks for it once per install. If you said no during setup, the switch in the app cannot ask again: you allow it in the phone's settings."
+kind: "issue"
+symptoms:
+  - "I turned on notifications in Settings and nothing happens"
+  - "I don't get notified when money arrives"
+  - "The notification switch is off and won't stay on"
+resolution: "self-serve"
+collect: []
+diagnosis:
+  - "Confirm the phone-level permission is granted. No explorer involved."
+related:
+  - "notifications"
+  - "create-wallet"
+---
+
+## The fix
+
+1. In XRP Mobile, tap the gear, stay on **General**, and check the **Notifications** switch is on.
+2. If the phone did not ask for permission when you flipped it, it already asked once and you said no. Allow it in the phone:
+   - **iOS:** Settings, Notifications, XRP Mobile, Allow Notifications.
+   - **Android:** Settings, Apps, XRP Mobile, Notifications.
+3. Come back to the app. From here you hear about money arriving the moment it lands.
+
+## Still nothing
+
+- Notifications are per install. If you reinstalled, the phone asks again the first time you flip the switch.
+- Focus or Do Not Disturb modes silence them.
+- Notifications tell you about incoming funds and updates. They are not a substitute for checking Activity for a specific payment.

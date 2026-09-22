@@ -1,0 +1,17 @@
+---
+title: "Where are my multichain tokens stored?"
+description: "Bitcoin, Ether, USDC and other non-XRP assets are held by a NEAR Intents account derived from the same recovery phrase as your XRP address. Backing up your phrase backs up everything."
+kind: faq
+related:
+  - "deposit-from-another-chain"
+  - "faq/how-do-swaps-work"
+  - "backup-your-wallets"
+---
+
+XRP lives natively in your XRP Ledger account. Every other asset (Bitcoin, Ether, USDC, Solana and the rest) is held by your **multichain account** on NEAR Intents, a cross-chain settlement network.
+
+- That account is **derived from the same 12 word recovery phrase** as your XRP address. There is nothing extra to back up.
+- Restoring your phrase in XRP Mobile restores both your XRP and your multichain balances.
+- You never need gas or a wallet on those other networks. Depositing, swapping and sending is handled through the multichain layer, and the app shows every leg with its hash.
+
+Wallets imported with Xaman secret numbers do not have a multichain account yet. See [Known limitations](../issues/known-limitations).

@@ -1,0 +1,44 @@
+---
+title: "My swap is stuck on Pending"
+description: "Swaps leave the XRP Ledger and settle through the multichain layer, so they take tens of seconds rather than a few. Pending means the swap is still moving. It becomes a problem only when it has been pending for a long time with no change."
+kind: "issue"
+symptoms:
+  - "My swap has been pending for 10 minutes"
+  - "The swap screen shows two hashes and says pending"
+  - "I closed the app during a swap"
+  - "Did my swap go through"
+resolution: "agent"
+collect:
+  - "The intents hash and the transaction hashes from the swap screen or Activity"
+  - "Which pair and amount you swapped"
+  - "When you started it"
+  - "Whether the XRP already left your balance"
+diagnosis:
+  - "Ask for the intents hash from the swap screen or Activity and open it on explorer.near-intents.org: it shows each leg and its status."
+  - "Check the outgoing XRP payment on xrpscan.com: not there means the swap never started and the balance is intact."
+  - "Intents status shows the deposit received but no settlement after 30 minutes: escalate with the intents hash; refunds land in the origin wallet in the paid asset."
+related:
+  - "swap"
+  - "faq/how-do-swaps-work"
+  - "issues/swap-failed"
+  - "issues/swap-taking-long"
+---
+
+## What Pending means
+
+A swap is not a trade inside the XRP Ledger. Your XRP leaves your wallet to a deposit address, the swap is routed through NEAR Intents, and the asset you bought is credited to your wallet. The screen shows each leg with its own hash while they settle. **Pending means it is still moving, not that it is stuck.** Closing the app does not cancel it; the swap keeps settling on its own.
+
+## Normal timings
+
+- XRP to a multichain asset, or the reverse: usually under a minute, sometimes a few minutes.
+- Anything involving Bitcoin or a congested network: can take longer, up to the confirmation time of that network.
+
+## When to worry
+
+After **30 minutes** with no change, or if the XRP left your balance and the destination asset has not appeared after that time.
+
+## What to do
+
+1. Pull down on the wallet home to refresh. The balance often updates before the swap screen does.
+2. Open **Activity** and check whether the outgoing XRP payment completed. If it did, the swap was accepted and is settling.
+3. If it is past the 30 minute mark, contact support from Settings, then Support, with the hashes. The team can look up the swap on the intents explorer and see exactly which leg it is on. Swaps that cannot complete are refunded to the wallet they came from, in the asset you paid with.

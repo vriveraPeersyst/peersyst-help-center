@@ -1,0 +1,40 @@
+---
+title: "The app says my account needs activating"
+description: "A brand new XRP Ledger account does not exist on the network until it receives its first 1 XRP. Until then the app shows an activation card and sending, swapping and receiving other tokens are unavailable."
+kind: "issue"
+symptoms:
+  - "There is an 'Activate your XRP account' card on my wallet"
+  - "I created a wallet and can't send or swap"
+  - "It says I need to deposit 1 XRP first"
+  - "My address shows as not found on the explorer"
+resolution: "self-serve"
+collect: []
+diagnosis:
+  - "Look the address up on xrpscan.com. 'Account not found' means it was never funded: the card is correct."
+  - "If the explorer shows a balance of 1 XRP or more, the account is active and the app is stale: ask the user to pull to refresh and, failing that, escalate as a display bug with the address."
+  - "If a deposit was sent, ask for the sender's transaction hash and check where it actually went (address, network, amount after fees)."
+related:
+  - "receive"
+  - "buy-xrp"
+  - "faq/what-is-the-base-reserve"
+  - "issues/one-xrp-locked"
+---
+
+## What is going on
+
+Creating a wallet in the app generates your keys and your address, but the XRP Ledger only creates the account when the address receives its first deposit of **at least 1 XRP**, the base reserve. Until that happens the ledger has never heard of your address, so it cannot send, swap or hold other tokens.
+
+Nothing is broken. This is how every XRP Ledger wallet works, including exchanges and hardware wallets.
+
+## The fix
+
+1. Tap **Deposit** on the activation card, or **Receive** on the wallet home.
+2. Pick **XRP** on the **XRP Ledger** network. Only that can activate the account.
+3. Copy your address or show the QR, and send at least 1 XRP to it from an exchange, another wallet, or a friend. You can also tap **Buy** and pay by card.
+4. The card disappears the moment the funds land, usually within a few seconds of the sending side confirming.
+
+## Still showing after the deposit?
+
+- Check the address you sent to matches the one in the app, first and last characters.
+- Check the amount was at least 1 XRP **after** the sender's own fees. Exchanges sometimes deduct a withdrawal fee from the amount.
+- Look the address up on an XRP Ledger explorer such as xrpscan.com. If the explorer shows a balance, pull down on the wallet home to refresh. If the explorer says the account does not exist, the deposit has not arrived on the ledger and the sender needs to check their side.

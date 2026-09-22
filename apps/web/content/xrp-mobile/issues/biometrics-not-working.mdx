@@ -1,0 +1,37 @@
+---
+title: "Face ID or fingerprint does not work"
+description: "The biometric switch only appears when the phone itself has a face or a fingerprint enrolled, and it always falls back to the PIN. Most cases are the phone's setting, not the app's."
+kind: "issue"
+symptoms:
+  - "I can't find the biometric option in Security"
+  - "Face ID stopped working in XRP Mobile"
+  - "It always asks for the PIN"
+  - "Fingerprint button on the PIN screen does nothing"
+resolution: "self-serve"
+collect: []
+diagnosis:
+  - "Confirm the phone has biometrics enrolled and the app is allowed to use them in the phone settings. No explorer involved."
+related:
+  - "biometrics"
+  - "change-passcode"
+  - "issues/forgot-pin"
+tracking: "xrp-mobile#184"
+---
+
+## The switch is missing
+
+Open the gear, then **Security**. The **Biometric authentication** row only appears when your phone has Face ID, Touch ID or a fingerprint enrolled in the system settings. Enrol one there first, then come back.
+
+## The switch is on but the app asks for the PIN
+
+- On iOS, check that XRP Mobile is allowed to use Face ID: Settings, XRP Mobile, Face ID. If it was denied once, the app cannot ask again until you allow it there.
+- If your face or finger failed a few times in a row, the phone itself falls back to your PIN. That is the phone protecting you and the PIN is always accepted.
+- Turn the switch off and on again in Security. The phone will ask you to authenticate to confirm the change.
+
+## The fingerprint icon on the PIN pad
+
+On the Set PIN and Confirm PIN screens during setup there is a fingerprint key that does nothing yet. It is a known cosmetic issue; biometrics are set up afterwards from Security.
+
+## What the app can and cannot see
+
+Nothing about your face or finger reaches XRP Mobile. The phone answers yes or no, and that is all the app gets. Turning biometrics off does not change your wallet or your keys.

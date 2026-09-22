@@ -1,0 +1,19 @@
+---
+title: "How do swaps work?"
+description: "Swaps are routed through NEAR Intents, a cross-chain settlement network. Your XRP leaves the ledger natively, the swap settles across networks, and the asset you bought is credited to your wallet, all signed by your keys on your phone."
+kind: faq
+related:
+  - "swap"
+  - "faq/what-does-a-swap-cost"
+  - "faq/where-are-my-multichain-tokens"
+  - "issues/swap-pending"
+---
+
+A swap in XRP Mobile is not a trade inside the XRP Ledger and it does not need an exchange account.
+
+1. You pick the pair and the amount, and the app shows a live quote: what you get, the rate, the fees and the max slippage.
+2. You confirm with your PIN. Your keys sign on the phone, as for any payment.
+3. Your XRP leaves your wallet to a deposit address. From there the swap is routed through **NEAR Intents**, a network of solvers that settle across chains.
+4. The asset you bought is credited to your wallet. If it is XRP, it arrives natively on the XRP Ledger. If it is from another network, it is held by your multichain account, which is derived from the same recovery phrase.
+
+The screen shows each leg with its own hash while it settles. Pending means moving, not stuck. You never need gas on any other network: the only network fee you pay yourself is the tiny XRP Ledger fee when XRP leaves your wallet.

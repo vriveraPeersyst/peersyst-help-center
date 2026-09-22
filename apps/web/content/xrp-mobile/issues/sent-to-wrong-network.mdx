@@ -1,0 +1,61 @@
+---
+title: "I sent funds to the wrong network or the wrong address"
+description: "Blockchain transfers cannot be reversed by anyone. Whether anything can be done depends on where the funds actually went, so this page walks through the cases."
+kind: "issue"
+symptoms:
+  - "I sent USDC on Ethereum to my Base deposit address"
+  - "I sent tokens to my XRP address on another network"
+  - "I sent to an old deposit address"
+  - "I sent to the wrong address by mistake"
+  - "Can you reverse my transaction"
+resolution: "escalate"
+collect:
+  - "The transaction hash on the sending network"
+  - "Which asset, which network, and which address you sent to"
+  - "Where the address came from: the Receive screen, a saved note, a contact"
+diagnosis:
+  - "Open the hash on the sending network's explorer and note: network, asset contract, destination address, amount, confirmation status."
+  - "Destination is a deposit address the app generated (the user got it from Receive): escalate, possibly recoverable."
+  - "Destination is the user's r-address on a non-XRPL network, or a mistyped r-address that exists on xrpscan.com: not recoverable; explain and close."
+  - "Destination is an exchange address: follow the missing-tag issue."
+related:
+  - "deposit-from-another-chain"
+  - "receive"
+  - "issues/cross-chain-deposit-missing"
+---
+
+## The honest version first
+
+No wallet, exchange or team can reverse a confirmed blockchain transaction. XRP Mobile does not hold your funds and has no admin key over the XRP Ledger or any other network. What follows is what can and cannot be done, case by case.
+
+## Case 1: right asset, wrong network, an address the app gave you
+
+Example: the app gave you a USDC on Base deposit address and you sent USDC on Ethereum to it.
+
+Sometimes recoverable, never automatic. The funds are at a real address on the other network and the multichain layer may be able to sweep them. Contact support with the transaction hash. Expect it to take time and do not send anything else to that address meanwhile.
+
+## Case 2: wrong asset to a deposit address
+
+Example: USDT sent to a USDC deposit address on the same network.
+
+Same as case 1: sometimes recoverable, contact support with the hash.
+
+## Case 3: a token sent to your XRP Ledger address on a different network
+
+Example: XRP sent on the BNB Smart Chain or Ethereum to your r-address.
+
+Not recoverable by us. Your XRP Ledger address does not exist on other networks. The recovery path, if any, is with the sender's platform, because the address format is not even valid there and most platforms block it.
+
+## Case 4: XRP sent from XRP Mobile to a wrong or mistyped XRP address
+
+Not recoverable. The XRP Ledger checks that the address is valid, not that it is the one you meant. If the account exists, the owner has your XRP. If it does not exist and you sent 1 XRP or more, you just activated a stranger's account. Only the owner of that address can send it back.
+
+## Case 5: sent to an exchange without the destination tag
+
+Recoverable, by the exchange. See [I sent XRP to an exchange and it never arrived](./exchange-deposit-missing-tag).
+
+## Avoiding it next time
+
+- Always pick the asset and the network in Receive before copying anything, and read the warning under the address.
+- Never reuse a deposit address from an old message or note.
+- Send a small test amount first when it is a new route.

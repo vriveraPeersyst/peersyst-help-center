@@ -1,0 +1,46 @@
+---
+title: "A payment fails with a generic error"
+description: "Most failed XRP payments come down to one of four ledger rules: the destination is new and needs 1 XRP, the destination requires a destination tag, you would dip into your reserve, or the network rejected the transaction. The app currently reports some of these as a generic error after a long wait."
+kind: "issue"
+symptoms:
+  - "Something went wrong when sending"
+  - "Transaction failed"
+  - "The send spins for over a minute and then errors"
+  - "I can't send 0.5 XRP to a new wallet"
+  - "Sending to my exchange fails"
+resolution: "agent"
+collect:
+  - "The recipient address and whether it is an exchange"
+  - "The amount you tried to send"
+  - "A screenshot of the error"
+  - "Whether the recipient account already has XRP on the ledger"
+diagnosis:
+  - "Look the recipient address up on xrpscan.com: 'Account not found' and amount under 1 XRP means the ledger refused a sub-reserve activation (tecNO_DST_INSUF_XRP)."
+  - "Recipient found with 'Require Destination Tag' set (Flags on the account page) and no tag entered: tecDST_TAG_NEEDED; the fix is adding the tag."
+  - "Sender balance on xrpscan.com minus reserve minus amount below zero: reserve problem; suggest Max."
+  - "If a failed hash exists in Activity, open it: the Result code on the explorer names the reason (tec*, tem*, tef*)."
+related:
+  - "send-xrp"
+  - "send-destination-tag"
+  - "issues/cannot-send-full-balance"
+  - "issues/account-not-activated"
+tracking: "xrp-mobile#198"
+---
+
+## Check these four things
+
+**1. Is the recipient account new?** A brand new XRP Ledger address does not exist until it receives at least 1 XRP. A payment of less than 1 XRP to it is rejected by the ledger. Send 1 XRP or more the first time.
+
+**2. Does the recipient require a destination tag?** Exchanges and some services set their account to refuse payments without a tag. Go back, tap **Add destination tag** and enter the number from their deposit page. See [Send with a destination tag](../send-destination-tag).
+
+**3. Would the payment dip into your reserve?** You cannot spend the 1 XRP base reserve, and the network fee comes out of your spendable balance too. Use the **Max** button, which already accounts for both, or send a little less.
+
+**4. Is the address correct?** The field turns green when the address is valid on the XRP Ledger. Valid is not the same as right: compare the first and last characters with whoever expects the payment.
+
+## Why the app takes so long to tell you
+
+When the ledger rejects a payment outright, the app currently keeps waiting for confirmation until it times out, then shows a generic error. The team is fixing this so the real reason appears at once. In the meantime, the four checks above cover almost every case.
+
+## Not one of the four
+
+Contact support with the details at the top of this page. If a payment shows as sent in Activity but the recipient disagrees, send them the transaction hash from the receipt: it settles the question on the public ledger.

@@ -1,0 +1,81 @@
+---
+title: "Support playbook: how to investigate"
+description: How the support agent confirms what happened before answering. Every issue page points here. The ledger and the bridge are public, so almost every question can be settled by looking rather than guessing.
+kind: playbook
+---
+
+## The rule
+
+Never answer "it should arrive soon" without looking. Everything XRP Mobile does is on a public ledger or a public explorer, and the user can be given the exact link.
+
+## What to ask for first
+
+- **Their XRP address.** Receive, then copy. It starts with `r`.
+- **The transaction hash** of whatever they are asking about, from the receipt in Activity (tap the payment, the long string at the bottom) or from the sending platform.
+- **The asset and the network** when it is not plain XRP.
+- **A screenshot** of the screen with the problem.
+
+Never ask for, and never accept, a recovery phrase, secret numbers or a private key. If a user pastes one, tell them to move their funds to a new wallet immediately.
+
+## The XRP Ledger: xrpscan.com
+
+Paste an address or a hash into the search box.
+
+**On an address page**
+
+- `Account not found`: the account has never received 1 XRP. Everything that depends on an active account (send, swap, receiving other tokens, the referral campaign) is blocked by design. Fix: fund it with at least 1 XRP.
+- **Balance**: the full balance including the reserve. The app shows this minus 1 XRP, minus 0.2 XRP per entry in **Owner Count** (trust lines). If explorer minus reserve equals what the app shows, nothing is missing.
+- **Flags**: `Require Destination Tag` means payments without a tag are refused. Exchanges set this.
+- **Transactions**: the history the app's Activity tab reads from. Tiny incoming amounts with memos are dust advertising.
+
+**On a transaction page**
+
+- **Result**: `tesSUCCESS` means it settled. Anything else did not move funds. The common ones:
+  - `tecNO_DST_INSUF_XRP`: destination is new and the amount was under 1 XRP.
+  - `tecDST_TAG_NEEDED`: destination requires a destination tag.
+  - `tecUNFUNDED_PAYMENT` or `tecINSUFFICIENT_RESERVE`: the sender would have gone under the reserve.
+  - `tecNO_PERMISSION` or `tecNO_DST`: destination refuses payments or does not exist.
+- **Destination** and **Destination Tag**: what the exchange needs to credit a deposit. If the tag is wrong or missing, the exchange holds the funds and only the exchange can credit them.
+- **Fee**: the network fee, a hundredth of a cent.
+- **Date**: ledger time, in UTC.
+
+## Swaps and cross-chain transfers: explorer.near-intents.org
+
+A swap, a send to another chain or a deposit from another chain is routed through NEAR Intents. The swap screen and Activity show an **intents hash** and one hash per leg.
+
+- Paste the intents hash. The page shows the deposit leg (did the user's asset arrive), the settlement, and the withdrawal leg to the destination network, each with a status.
+- Pending on the deposit leg: the user's payment has not been seen yet. Check it on the origin network's explorer.
+- Deposit received, no settlement for more than 30 minutes: escalate to the team with the intents hash. Swaps that cannot complete are refunded to the origin wallet in the asset that was paid.
+- Withdrawal leg completed: the funds are on the destination network. If the app does not show them, it is stale: pull to refresh, or escalate as a display issue.
+
+## Other networks
+
+Same idea, different explorer. Confirm the hash exists, is confirmed, and went to the address the app showed, on the network the app showed, for the asset the app showed.
+
+| Network | Explorer |
+|---|---|
+| Ethereum | etherscan.io |
+| Base | basescan.org |
+| Arbitrum | arbiscan.io |
+| Polygon | polygonscan.com |
+| Solana | solscan.io |
+| Bitcoin | mempool.space |
+| NEAR | nearblocks.io |
+| Stellar | stellar.expert |
+
+A mismatch in any of the three (address, network, asset) is a wrong-network case, and the rules on [that page](./sent-to-wrong-network) decide what can be done.
+
+## Deciding who closes it
+
+Every issue page carries a label. Apply it as written:
+
+- **Self-serve**: answer with the page, confirm the user is unblocked, close.
+- **Support can resolve in chat**: walk through the diagnosis steps on the page, confirm the outcome on the explorer, close.
+- **Needs a human from the team**: collect the items listed under "Have this ready", attach the explorer links you already opened, hand over. Do not promise a refund, a reversal or a timeline.
+
+## Things we cannot do, ever
+
+- Reverse or cancel a confirmed transaction on any network.
+- Recover funds sent to an address we do not control.
+- Reset a PIN or recover a wallet without its recovery phrase or secret numbers.
+- See or move a user's funds. XRP Mobile is self custody; the keys are on the user's phone.

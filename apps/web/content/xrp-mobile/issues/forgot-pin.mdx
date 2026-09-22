@@ -1,0 +1,39 @@
+---
+title: "I forgot my PIN"
+description: "The PIN only protects the app on this phone and is never sent anywhere, so nobody can look it up or reset it. If you have your recovery phrase or secret numbers you lose nothing: reinstall and import."
+kind: "issue"
+symptoms:
+  - "I don't remember my PIN"
+  - "Locked out of XRP Mobile"
+  - "Can you reset my PIN"
+  - "Too many wrong PIN attempts"
+resolution: "self-serve"
+collect: []
+diagnosis:
+  - "Nothing to look up: the PIN is device-local. Confirm the user has a recovery phrase or secret numbers before recommending a reinstall."
+  - "If the user has no backup, do not recommend deleting anything; escalate."
+related:
+  - "import-mnemonic"
+  - "import-secret-numbers"
+  - "backup-your-wallets"
+  - "issues/lost-phone"
+---
+
+## What is going on
+
+The PIN is local. It unlocks the app on this device and signs transactions here, and it is not part of your wallet or your account on the XRP Ledger. Because it never leaves the phone, there is no "forgot PIN" email and nothing support can reset.
+
+## If Face ID or fingerprint is on
+
+Biometrics unlock the app without the PIN. Once inside, go to the gear, **Security**, **Change passcode**. The app asks for the current PIN before it lets you set a new one, so if you truly cannot remember it, use the path below instead.
+
+## The fix: reinstall and import
+
+1. Make sure you have your **recovery phrase** (12 words) or your **secret numbers** (8 rows) for every wallet in the app. Without them, do not delete anything; read the next section first.
+2. Uninstall XRP Mobile and install it again from the App Store or Google Play.
+3. Tap **Import wallet**, enter your phrase or secret numbers, and set a new PIN.
+4. Same address, same balance. Repeat for any other wallet you had.
+
+## If you do not have your backup
+
+Do not uninstall. Your keys are still on the phone, behind the PIN. Try the PIN calmly with the combinations you use elsewhere. If biometrics were ever enabled, try that. If neither works and you have no backup, there is no way for anyone, including us, to recover the wallet: this is what self custody means. Contact support anyway, and the team will make sure you have tried everything.

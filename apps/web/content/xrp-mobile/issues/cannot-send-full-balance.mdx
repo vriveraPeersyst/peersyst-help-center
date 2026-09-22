@@ -1,0 +1,29 @@
+---
+title: "I cannot send the whole balance"
+description: "Two things always stay behind on the XRP Ledger: the 1 XRP base reserve and the network fee. The Max button already accounts for both. Typing your full balance by hand will fail."
+kind: "issue"
+symptoms:
+  - "Insufficient funds when I try to send everything"
+  - "Max sends less than my balance"
+  - "I want to empty my wallet"
+resolution: "self-serve"
+collect: []
+diagnosis:
+  - "Look the address up on xrpscan.com: Balance minus 1 XRP minus 0.2 XRP per Owner Count minus 0.00001 XRP fee is the maximum sendable. If the user typed more than that, this is the cause."
+related:
+  - "send-xrp"
+  - "issues/one-xrp-locked"
+  - "faq/what-is-the-base-reserve"
+---
+
+## What is going on
+
+Your XRP Ledger account must keep 1 XRP on the ledger to exist (the base reserve), and every payment costs a tiny network fee that comes out of your balance. So the most you can send is your balance minus 1 XRP minus the fee. The app's spendable balance and the **Max** button already do that arithmetic for you.
+
+## The fix
+
+On the amount screen tap **Max** instead of typing the number. If you typed a number and it fails, lower it by a hair; the fee is a hundredth of a cent, so the reserve is what is in the way.
+
+## Emptying the wallet completely
+
+The 1 XRP reserve stays as long as the account exists. Closing an account is a separate XRP Ledger operation that the app does not offer, so in practice the last 1 XRP stays put. For multichain assets there is no reserve: Max sends the whole balance.

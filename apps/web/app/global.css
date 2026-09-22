@@ -23,9 +23,15 @@ html {
   gap: 0.75rem;
 }
 
-/* The walkthrough, on the other hand, wants the full column. */
+/* The walkthrough is the help cut: a portrait recording of the phone. Filling
+   the column would make it taller than the viewport, so it is capped by height
+   and centred, and keeps its own aspect ratio. */
 .prose video {
-  width: 100%;
+  display: block;
+  max-height: 78vh;
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
   border-radius: 0.75rem;
   background: #000;
 }
@@ -33,4 +39,79 @@ html {
 html > body[data-scroll-locked] {
   margin-right: 0px !important;
   --removed-body-scroll-bar-size: 0px !important;
+}
+
+/* Issue pages open with the same three things the support agent reads: how the
+   problem shows up, who closes it, and what to have ready. */
+.issue-header {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.5rem 0 2rem;
+}
+.issue-header section {
+  border: 1px solid var(--color-fd-border);
+  border-radius: 0.75rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--color-fd-card);
+}
+.issue-header h2 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-fd-muted-foreground);
+  margin: 0 0 0.4rem;
+}
+.issue-header ul,
+.issue-header ol {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.2rem;
+}
+.issue-header p {
+  margin: 0;
+}
+.issue-header section[data-resolution] {
+  border-left: 4px solid #03dd7e;
+}
+.issue-header section[data-resolution='agent'] {
+  border-left-color: #1fb6ff;
+}
+.issue-header section[data-resolution='escalate'] {
+  border-left-color: #f59e0b;
+}
+.issue-tracking {
+  font-size: 0.85rem;
+  color: var(--color-fd-muted-foreground);
+}
+.related-pages {
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--color-fd-border);
+  padding-top: 1.25rem;
+}
+.related-pages h2 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-fd-muted-foreground);
+  margin: 0 0 0.6rem;
+}
+.related-pages ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+.related-pages li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.related-pages li span {
+  font-size: 0.75rem;
+  color: var(--color-fd-muted-foreground);
+  text-transform: uppercase;
 }

@@ -1,0 +1,46 @@
+---
+title: "A deposit from another network never arrived"
+description: "Deposits of Bitcoin, Ether, USDC, Solana and other non-XRP assets travel through a bridge and need network confirmations before they show. Most land within minutes; slow networks take longer; the wrong network or the wrong address cannot be recovered."
+kind: "issue"
+symptoms:
+  - "I sent USDC from Base, Ethereum, Solana or Arbitrum and it is not showing"
+  - "My Bitcoin deposit is taking a long time"
+  - "I deposited to the address in Receive and nothing happened"
+  - "Deposit stuck"
+resolution: "agent"
+collect:
+  - "Which asset and which network you sent from"
+  - "The transaction hash on the sending network"
+  - "The deposit address the app showed you, and when you copied it"
+  - "A screenshot of the deposit on the sending wallet or exchange"
+diagnosis:
+  - "Get the hash on the sending network and open it on that network's explorer (etherscan.io, basescan.org, solscan.io, arbiscan.io, mempool.space). Not confirmed there: nothing has reached us, wait."
+  - "Confirmed: compare the destination address, the asset contract and the network with the deposit address and network the app showed. Any mismatch is a wrong-network case."
+  - "All matching and confirmed for more than 30 minutes: escalate with the hash so the team traces the deposit on the intents side."
+related:
+  - "deposit-from-another-chain"
+  - "faq/where-are-my-multichain-tokens"
+  - "issues/sent-to-wrong-network"
+  - "issues/swap-taking-long"
+---
+
+## What is going on
+
+XRP arrives natively on the XRP Ledger in seconds. Every other asset arrives through the multichain layer (NEAR Intents), which waits for the sending network to reach enough confirmations before crediting your wallet. On fast networks that is a minute or two. On Bitcoin it can be twenty minutes or more, and on Ethereum during congestion it can take longer than usual.
+
+## Check these in order
+
+1. **Has the sending side actually sent it?** Exchanges often show a withdrawal as done while it is still in their internal queue. Ask for the transaction hash on the sending network.
+2. **Does the hash show as confirmed?** Paste it into the explorer of that network (etherscan.io, basescan.org, solscan.io, mempool.space). If it is still pending there, nothing has reached us yet.
+3. **Is it the right network?** The deposit address in the app is generated for one asset on one network. USDC sent on Ethereum to an address the app gave you for USDC on Base is a different route, and the assets do not cross over automatically.
+4. **Is it the right asset?** The address for USDC does not accept USDT, even on the same network.
+5. **Is the address the one the app showed you for this deposit?** Deposit addresses are generated per asset and network and can change between deposits. An address saved months ago may no longer be yours.
+6. **Is the amount above the minimum?** Very small amounts, below the bridge minimum shown on the Receive screen, are not credited.
+
+## When it is confirmed on the sending side, right asset, right network, right address, and still missing after 30 minutes
+
+That is when we need to look at it. Contact support from Settings, then Support, with the details listed at the top of this page. The team can trace the deposit through the bridge.
+
+## When it went to the wrong network, wrong asset or an old address
+
+Read [I sent funds to the wrong network or the wrong address](./sent-to-wrong-network). Some cases are recoverable and most are not, and it depends on exactly what happened.

@@ -1,0 +1,32 @@
+---
+title: "My balance is 1 XRP lower than what I deposited"
+description: "The XRP Ledger keeps a base reserve of 1 XRP in every account. The app shows what you can actually spend, so the reserve looks missing when it is simply locked."
+kind: "issue"
+symptoms:
+  - "I deposited 10 XRP and the app shows 9"
+  - "1 XRP is locked or unavailable in my wallet"
+  - "Why can't I spend my whole balance"
+resolution: "self-serve"
+collect: []
+diagnosis:
+  - "Look the address up on xrpscan.com: the Balance there includes the reserve, the app shows Balance minus 1 XRP (minus 0.2 XRP per trust line under Owner Count)."
+  - "If explorer balance minus reserve equals the app balance, nothing is missing: answer with this page."
+related:
+  - "receive"
+  - "faq/what-is-the-base-reserve"
+  - "issues/cannot-send-full-balance"
+---
+
+## What is going on
+
+The XRP Ledger requires every account to keep a **base reserve of 1 XRP** on the ledger at all times. The reserve is not a fee and XRP Mobile does not take it: it stays in your account, it is just not spendable while the account exists. The ledger uses it to stop people from creating millions of empty accounts.
+
+XRP Mobile shows your **spendable** balance with the reserve already deducted, because that is the number you can actually send or swap. The full amount, reserve included, is what you see on any XRP Ledger explorer.
+
+## Is it gone?
+
+No. If you ever close the account (which needs a special transaction and is not something the app offers), most of the reserve comes back. For everyday use, think of it as the deposit the ledger keeps for your account to exist.
+
+## What about more than 1 XRP?
+
+Each trust line to another token on the XRP Ledger adds a small owner reserve on top (0.2 XRP each). If your locked amount is a little over 1 XRP, that is why.

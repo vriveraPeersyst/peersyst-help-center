@@ -1,0 +1,47 @@
+---
+title: "I sent XRP to an exchange and it never arrived"
+description: "Exchanges share one XRP address between all their customers and use a destination tag to know whose deposit it is. If the tag was missing or wrong, the XRP reached the exchange but was not credited to you. Only the exchange can fix it."
+kind: "issue"
+symptoms:
+  - "I withdrew XRP from XRP Mobile to Binance, Coinbase, Kraken or another exchange and it is not showing"
+  - "I forgot the destination tag"
+  - "I typed the wrong destination tag"
+  - "The transaction says completed but the exchange has nothing"
+resolution: "escalate"
+collect:
+  - "The transaction hash, from the payment's receipt in Activity"
+  - "The destination address and the destination tag you used, if any"
+  - "The exchange and the tag they asked for on their deposit page"
+diagnosis:
+  - "Open the transaction hash on xrpscan.com. Confirm Result is tesSUCCESS, the Destination is the exchange's address and read the Destination Tag field."
+  - "Tag present and correct: the exchange has a crediting delay; tell the user to wait for the exchange's confirmation count and contact the exchange if it exceeds it."
+  - "Tag missing or different from the one on the exchange's deposit page: the funds are with the exchange; hand the user the hash, amount, time and tag to open a ticket with the exchange."
+  - "Result not tesSUCCESS: the payment never left; treat as a failed send."
+related:
+  - "send-destination-tag"
+  - "activity-history"
+  - "faq/what-is-a-destination-tag"
+tracking: "xrp-mobile#279"
+---
+
+## What is going on
+
+An exchange does not give every customer their own XRP address. Everyone deposits to the same address, and the **destination tag** (a number the exchange shows next to the address) is what tells them the money is yours. The XRP Ledger delivers the payment either way. If the tag was missing or wrong, the XRP is sitting in the exchange's wallet with nobody to credit.
+
+## First, confirm what actually happened
+
+1. Open **Activity** on the wallet home and tap the payment.
+2. Check the status is completed and copy the **transaction hash**.
+3. Open the hash on an XRP Ledger explorer such as xrpscan.com. It shows the destination address, the destination tag that travelled with the payment, and the time.
+
+If the explorer shows the payment delivered to the exchange's address, XRP Mobile did its part and the funds are at the exchange.
+
+## The fix
+
+Contact **the exchange's support**, not ours, with the transaction hash, the amount, the time, and the tag you used (or say it was missing). Every large exchange has a procedure for missing-tag deposits. Some charge a fee and some take weeks, but the funds are recoverable because they hold them.
+
+We cannot recover it from our side: XRP Mobile never holds your funds, and a payment on the XRP Ledger cannot be reversed by anyone.
+
+## If the receipt in the app does not show the tag
+
+The app has a known display issue where a destination tag that was sent correctly is not shown on the receipt afterwards. The explorer is the source of truth: if the tag is there, it was sent.

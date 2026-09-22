@@ -1,0 +1,35 @@
+---
+title: "My swap failed"
+description: "A swap fails when the quote expires before you confirm, when the market moves further than the slippage limit while it settles, when the amount is under the provider's minimum, or when your spendable balance is not enough. Failed swaps do not lose funds."
+kind: "issue"
+symptoms:
+  - "Swap failed"
+  - "Quote expired"
+  - "The swap went through but I got my XRP back"
+  - "Amount is below the minimum"
+  - "Insufficient balance for the swap"
+resolution: "self-serve"
+collect: []
+diagnosis:
+  - "Check Activity and xrpscan.com for an outgoing XRP payment to a deposit address. None: the swap failed before paying, nothing left the wallet."
+  - "Outgoing payment exists: open the intents hash on explorer.near-intents.org; a refund appears as an incoming payment in the same asset. Refund present: closed. Refund absent after 30 minutes: treat as swap pending and escalate."
+related:
+  - "swap"
+  - "faq/how-do-swaps-work"
+  - "faq/what-does-a-swap-cost"
+  - "issues/swap-pending"
+---
+
+## The usual causes
+
+**The quote expired.** A quote is a live price and it is only good for a short time. If you take a while on the confirmation screen, go back and request it again.
+
+**The market moved beyond the slippage limit.** The confirmation screen shows a max slippage of 1%. If the price moves further than that between your confirmation and settlement, the swap fails on purpose instead of filling at a worse rate, and your XRP comes back to your wallet. Try again; in a fast market it may take two attempts.
+
+**The amount is under the minimum.** The provider sets a minimum per pair (a couple of XRP at the time of writing) and the amount field tells you when you are under it.
+
+**Not enough spendable balance.** The swap needs the amount plus the tiny network fee, and cannot touch the 1 XRP reserve. Use a percentage shortcut instead of typing the full balance.
+
+## Did I lose anything?
+
+No. A swap either completes or the asset you paid with is returned to the wallet it left. If the XRP left your balance and has not come back after 30 minutes, treat it as [a swap stuck on Pending](./swap-pending) and contact support with the hashes.

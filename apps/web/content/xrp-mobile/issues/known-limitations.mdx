@@ -1,0 +1,45 @@
+---
+title: "Known limitations we are working on"
+description: "Things the app does not do yet, or does not do well yet, that come up in support. Each one is tracked; this page is here so nobody spends an hour on a problem that is ours to fix."
+kind: "issue"
+symptoms:
+  - "Secret numbers wallet can't receive from other networks"
+  - "I can't send XLM to an exchange"
+  - "Hardware back button closes the app"
+  - "The tab bar covers a button on my phone"
+resolution: "escalate"
+collect:
+  - "Your XRP address, from Receive"
+  - "Which limitation, and a screenshot"
+diagnosis:
+  - "Match the report against the items on this page; if it matches, link the item and its tracking number and escalate only if the user needs a workaround applied on our side."
+related:
+  - "import-secret-numbers"
+  - "send-cross-chain"
+  - "get-support"
+tracking: "see each item"
+---
+
+## Wallets imported with secret numbers cannot receive multichain assets
+
+A wallet restored from Xaman secret numbers has an XRP Ledger account but, for now, no multichain account behind it. Receiving Bitcoin, Ether, USDC or any non-XRP asset into it fails, and the error message currently blames the token. Everything about XRP works normally. Workaround: create a second wallet with a recovery phrase for multichain assets, or contact support to be told when this ships. Tracked as xrp-mobile#91.
+
+## Sending XLM to an exchange
+
+Stellar exchanges require a memo on deposits and XRP Mobile cannot attach one yet, so XLM sent to an exchange from the app is not credited. Do not send XLM to an exchange from XRP Mobile until this is fixed. Sending XLM to a personal wallet works. Tracked as xrp-mobile#138.
+
+## Android: the hardware back button
+
+On some screens the system back button exits the app instead of closing the sheet or going back. On the **Name your wallet** screen during creation this discards the generated phrase and you start over (nothing was funded yet, so nothing is lost). Use the on-screen back arrow and close sheets by swiping down. Tracked as xrp-mobile#221 and #219.
+
+## Buttons hidden behind the tab bar on compact screens
+
+On smaller phones the bottom tab bar can cover the last button of a screen, notably on the Share tab. Scroll the content up; the button is there. Tracked as xrp-mobile#213 and #246.
+
+## A destination tag missing from a receipt
+
+A tag that was sent correctly is not shown on the payment's receipt afterwards. The explorer shows it. Tracked as xrp-mobile#279.
+
+## Wallet names
+
+Names are cut at 24 characters and capitalised automatically. Tracked as xrp-mobile#189.

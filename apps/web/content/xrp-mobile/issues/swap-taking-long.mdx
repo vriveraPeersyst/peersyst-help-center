@@ -1,0 +1,42 @@
+---
+title: "My swap or cross-chain send is taking long"
+description: "Anything that crosses networks (a swap, a send to another chain, a deposit from another chain) takes as long as the slowest network involved needs to confirm. Here is what is normal and when to contact us."
+kind: "issue"
+symptoms:
+  - "Why does my swap take minutes when XRP payments take seconds"
+  - "My send to Base has been pending for a while"
+  - "Cross-chain transfer slow"
+resolution: "self-serve"
+collect: []
+diagnosis:
+  - "Open the last pending hash on the destination network's explorer; if it is already confirmed there, the app is behind: pull to refresh."
+  - "Open the intents hash on explorer.near-intents.org to see which leg is still moving and on which network; compare against that network's normal confirmation time before escalating."
+related:
+  - "swap"
+  - "send-cross-chain"
+  - "deposit-from-another-chain"
+  - "faq/why-do-swaps-and-deposits-take-minutes"
+  - "issues/swap-pending"
+---
+
+## Why it is slower than an XRP payment
+
+An XRP payment settles in one ledger close, three to five seconds. A swap or a cross-chain send does more: it leaves the XRP Ledger, is routed through the multichain layer, and lands on another network, which has its own confirmation time. The screen tracks each leg with its own hash so you can see where it is.
+
+## What is normal
+
+| Route | Typical time |
+|---|---|
+| XRP payment on the XRP Ledger | seconds |
+| Swap between XRP and a multichain asset | under a minute, sometimes a few |
+| Send or deposit on Base, Arbitrum, Solana, Polygon | a few minutes |
+| Send or deposit on Ethereum | a few minutes, longer when congested |
+| Send or deposit on Bitcoin | 20 to 60 minutes |
+
+## What to do while you wait
+
+Nothing. Leaving the screen or closing the app does not cancel anything. When the last hash turns from pending to completed, the funds are there. You can paste that hash into the destination network's explorer to see it from outside the app.
+
+## When to contact support
+
+After 30 minutes past the typical time for the route, with the hashes from the transfer screen or Activity.

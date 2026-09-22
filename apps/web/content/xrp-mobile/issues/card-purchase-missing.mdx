@@ -1,0 +1,43 @@
+---
+title: "I paid by card and the XRP has not arrived"
+description: "Card purchases are processed by a payment provider outside XRP Mobile. The provider charges your card, buys the XRP and sends it to your address. Delays and declines happen on their side, and their receipt is what resolves it."
+kind: "issue"
+symptoms:
+  - "I bought XRP with my card and my balance did not change"
+  - "My card was charged but I got nothing"
+  - "The purchase says pending"
+  - "My card was declined"
+resolution: "escalate"
+collect:
+  - "The provider's order id or the confirmation email"
+  - "The amount and the time of the purchase"
+  - "Your XRP address, from Receive"
+  - "A screenshot of the provider's status screen if you still have it"
+diagnosis:
+  - "Get the provider's order id and status from the confirmation email. Order not complete: the provider owns it."
+  - "Order complete: look the user's address up on xrpscan.com for an incoming payment matching the amount around the completion time. Present: app is stale, refresh. Absent after an hour: escalate with the order id to chase the provider."
+related:
+  - "buy-xrp"
+  - "receive"
+  - "issues/account-not-activated"
+---
+
+## What is going on
+
+When you tap **Buy**, XRP Mobile shows you a live quote and then hands you to the payment provider for the card details. Your card never touches the wallet and neither do we. The provider verifies the payment, sometimes asks for identity checks on a first purchase, buys the XRP and sends it to the address the app gave them.
+
+## Normal timings
+
+A first purchase can take longer because of identity verification. Once the provider marks the order as complete, the XRP reaches your wallet within a few minutes. Bank and card holds can also make a charge appear before the order is actually approved.
+
+## What to check
+
+1. Look for the provider's confirmation email. It has the order id and the status.
+2. If the order is complete, look your address up on an XRP Ledger explorer such as xrpscan.com. If the XRP is there, pull down to refresh in the app.
+3. If the order is pending, cancelled or declined, the charge on your card is a hold and is released by your bank. Only the provider can tell you why.
+
+## Who to contact
+
+- Order pending, declined or charged without XRP: **the provider's support**, with the order id. Their contact is in the confirmation email and on their status page.
+- Order complete, XRP visible on the explorer, but not in the app: **us**, from Settings, then Support, with your address.
+- Order complete on the provider's side but no XRP on the explorer after an hour: contact us with the order id and we will chase it with the provider.

@@ -1,0 +1,17 @@
+---
+title: "Why do swaps and deposits take minutes?"
+description: "Anything that crosses networks is settled by a bridge and solver network and needs the origin network to confirm. Most swaps take under a minute; deposits and withdrawals on slower networks like Bitcoin take longer."
+kind: faq
+related:
+  - "issues/swap-taking-long"
+  - "issues/swap-pending"
+  - "issues/cross-chain-deposit-missing"
+---
+
+An XRP payment settles in seconds because it stays on the XRP Ledger. A swap or a cross-chain transfer leaves it, so it inherits the speed of every network it touches.
+
+- The origin network must confirm the deposit. On Base or Solana that is quick; on Ethereum it depends on congestion; on Bitcoin it is tens of minutes.
+- The settlement itself is fast, typically seconds once the deposit is seen.
+- The withdrawal to the destination network again takes that network's time.
+
+Leaving the screen does not cancel anything. If a transfer is pending well beyond the normal time for its route, the issue page [My swap is stuck on Pending](../issues/swap-pending) says when and how to contact us.

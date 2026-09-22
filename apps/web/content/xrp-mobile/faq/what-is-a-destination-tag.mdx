@@ -1,0 +1,16 @@
+---
+title: "What is a destination tag?"
+description: "A number that exchanges and services attach to your deposit so they know which customer the XRP belongs to. It is only needed when the recipient asks for it, and getting it wrong means the exchange has to recover the deposit."
+kind: faq
+related:
+  - "send-destination-tag"
+  - "issues/exchange-deposit-missing-tag"
+---
+
+Exchanges give all their customers the **same** XRP address and tell them apart by a **destination tag**, a number shown next to the address on the deposit page. The tag travels inside the payment and tells the exchange whose account to credit.
+
+- **When to add one:** only when the recipient's deposit page shows a tag. In XRP Mobile, tap **Add destination tag** on the send screen; the field is hidden until then so nobody sends one by accident.
+- **When not to:** a personal wallet does not need one. A tag sent to a personal wallet is simply ignored.
+- **If it is wrong or missing:** the XRP still arrives at the exchange, but nobody is credited. Contact the exchange with the transaction hash; only they can fix it.
+
+Some accounts refuse payments without a tag. In that case the payment fails instead of going to limbo.

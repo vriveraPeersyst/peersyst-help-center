@@ -1,0 +1,52 @@
+---
+title: "My referral code, follow or points are not working"
+description: "The Share tab runs the referral campaign: codes, tasks and points. Most problems are timing (verification is not instant) or an account that has not been activated yet. Some are known bugs the team is tracking."
+kind: "issue"
+symptoms:
+  - "My referral code says invalid"
+  - "I followed on X and it still shows as not verified"
+  - "My points did not update"
+  - "The leaderboard rank looks wrong"
+  - "My friend used my code and I got nothing"
+  - "Applying the code takes forever"
+resolution: "agent"
+collect:
+  - "Your XRP address, from Receive"
+  - "The code you tried to apply, or your own code"
+  - "Your X handle if the problem is the follow task"
+  - "A screenshot of the Share tab"
+diagnosis:
+  - "Look the referred wallet's address up on xrpscan.com: 'Account not found' means it is not active yet and the campaign will not count it."
+  - "Check the code format and that the wallet has not already redeemed a code. If active and still refused, or a verified task uncredited after a day, escalate with the address and the code."
+related:
+  - "getting-started-tour"
+  - "create-wallet"
+  - "issues/account-not-activated"
+tracking: "xrp-mobile#216, #215, #217"
+---
+
+## Before anything else
+
+The campaign needs an **activated** XRP Ledger account: the referred wallet must have received its first 1 XRP. A code applied to a wallet that has never been funded counts only once that wallet is active. See [The app says my account needs activating](./account-not-activated).
+
+## The code says invalid
+
+- Codes are case-insensitive but must be complete. Check for missing characters.
+- You cannot use your own code, and a wallet can redeem one code only.
+- The **Apply code** button lights up before the input is fully valid, and some unexpected failures are reported as "invalid code". Wait a moment and try once more before assuming the code is wrong.
+
+## Applying a code takes very long
+
+Redemption can take up to a minute while it is verified. Keep the app open. If the sheet freezes after tapping **Follow to verify**, close the sheet and verify the follow from the task card on the Share tab instead.
+
+## The follow is not verified
+
+Follow verification checks that your X account follows the campaign account, and it is not instant. Make sure the handle you typed is exactly your X handle, without the @, and that the follow is public. Give it a few minutes and reopen the Share tab.
+
+## Points or rank look wrong
+
+Points update when a task is verified, not when you complete it, and when tied on points the card and the leaderboard can currently show different ranks. That is a display issue being fixed; the points themselves are right.
+
+## When to contact support
+
+If a code is refused with a wallet that is active, or a verified task has not credited after a day, contact support with the details at the top of this page. The team can see the campaign record for your address.

@@ -1,0 +1,43 @@
+---
+title: "I imported my wallet and the balance is zero"
+description: "Nine times out of ten the import produced a different address than the one holding the funds: a typo, the wrong backup format, or a phrase from a different wallet. Compare the address, not the balance."
+kind: "issue"
+symptoms:
+  - "I imported with my 12 words and it shows 0 XRP"
+  - "The address after import is different from my old one"
+  - "My Xaman account shows empty in XRP Mobile"
+  - "Wrong account imported"
+resolution: "agent"
+collect:
+  - "The address the app shows after the import"
+  - "The address that holds the funds, from your old wallet or an explorer"
+  - "Whether the backup is 12 words, 24 words, 8 rows of secret numbers, or a family seed starting with s"
+diagnosis:
+  - "Ask for the address the app shows after import and the address that holds the funds; compare them. Different addresses: the import derived a different account (typo or wrong format)."
+  - "Same address: look it up on xrpscan.com. Balance there but zero in the app: connectivity or display, escalate. Account not found: never funded, activation case."
+related:
+  - "import-mnemonic"
+  - "import-secret-numbers"
+  - "add-second-wallet"
+  - "issues/account-not-activated"
+---
+
+## Check the address first
+
+Tap **Receive** and look at the address. Compare it with the address that holds your funds (your old wallet, an exchange withdrawal history, or an explorer). If they differ, the balance is not missing: the app derived a different account from what you typed.
+
+## Common causes
+
+**A typo.** The app validates the phrase as a whole, and a single wrong word can still pass the check while pointing at a different account. Import again, carefully, one word per box, in order.
+
+**Wrong format.** Secret numbers and a recovery phrase are two different backups for two different kinds of account. If your account came from Xaman and you have 8 rows of numbers, choose **Secret numbers**, not recovery phrase.
+
+**A phrase from a different wallet.** Many people have more than one backup. Check the date or label on the paper.
+
+**A 24 word phrase or a family seed.** XRP Mobile imports 12 word phrases and secret numbers. If your backup is a 24 word phrase or a family seed beginning with `s`, tell support: they will confirm what the app currently supports.
+
+**The account is new.** If the address matches but the explorer says the account does not exist, it has simply never been funded. See [The app says my account needs activating](./account-not-activated).
+
+## If the address matches and the explorer shows a balance
+
+Pull down to refresh, check your internet connection, and give it a minute. If the app still shows zero while the explorer shows funds, contact support with both addresses: that is a display or connectivity problem on our side to look at, and your funds are safe on the ledger.
