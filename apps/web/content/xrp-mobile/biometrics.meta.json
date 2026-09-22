@@ -1,0 +1,105 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "biometrics",
+  "title": "Unlock with Face ID",
+  "description": "Short XRP Mobile tutorial: enable biometric authentication from Settings, Security, and open your wallet with Face ID instead of a PIN. The app locks as soon as it leaves the screen, iOS answers the biometric check itself so no face data ever reaches XRP Mobile, and your PIN still works as a fallback.",
+  "lede": "Typing a PIN every time you open your wallet gets old, and every time you type it in public someone could be watching. Use your face instead.",
+  "video": {
+    "src": "/help/xrp-mobile/biometrics/video.mp4",
+    "poster": "/help/xrp-mobile/biometrics/poster.jpg",
+    "durationSec": 37
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Settings, then Security",
+      "body": "Open the gear and move to Security. Biometric authentication sits at the top, and it only appears if your phone actually has a face or a fingerprint enrolled.",
+      "anchor": "1-settings-then-security",
+      "src": {
+        "startSec": 0,
+        "endSec": 2.6
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 1.3,
+          "file": "/help/xrp-mobile/biometrics/step-1.png",
+          "alt": "Settings, then Security"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "Flip the switch",
+      "body": "Turn it on, and the phone asks you to prove yourself before it will accept the change.",
+      "anchor": "2-flip-the-switch",
+      "src": {
+        "startSec": 2.6,
+        "endSec": 4.8
+      },
+      "videoAtSec": 9.3,
+      "shots": [
+        {
+          "atSec": 2.9,
+          "file": "/help/xrp-mobile/biometrics/step-2.png",
+          "alt": "Flip the switch"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "Your face never leaves the phone",
+      "body": "Nothing about your face reaches XRP Mobile. iOS answers yes or no, and that is all the app ever sees.",
+      "anchor": "3-your-face-never-leaves-the-phone",
+      "src": {
+        "startSec": 4.8,
+        "endSec": 6.8
+      },
+      "videoAtSec": 13.83,
+      "shots": [
+        {
+          "atSec": 5.8,
+          "file": "/help/xrp-mobile/biometrics/step-3.png",
+          "alt": "Your face never leaves the phone"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "Close the app to test it",
+      "body": "Now close it properly and open it again. The wallet locks the moment it leaves the screen, which is what makes this worth doing.",
+      "anchor": "4-close-the-app-to-test-it",
+      "src": {
+        "startSec": 6.8,
+        "endSec": 10.5
+      },
+      "videoAtSec": 20.63,
+      "shots": [
+        {
+          "atSec": 7.3,
+          "file": "/help/xrp-mobile/biometrics/step-4.png",
+          "alt": "Close the app to test it"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "caption": "It opens with a glance",
+      "body": "And you are in, without typing anything. Your PIN still works whenever the face fails, so you are never locked out of your own money.",
+      "anchor": "5-it-opens-with-a-glance",
+      "src": {
+        "startSec": 10.5,
+        "endSec": 13.87
+      },
+      "videoAtSec": 28.07,
+      "shots": [
+        {
+          "atSec": 11,
+          "file": "/help/xrp-mobile/biometrics/step-5.png",
+          "alt": "It opens with a glance"
+        }
+      ]
+    }
+  ]
+}

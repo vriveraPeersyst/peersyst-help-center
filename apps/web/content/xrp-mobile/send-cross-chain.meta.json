@@ -1,0 +1,231 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "send-cross-chain",
+  "title": "Send to another chain",
+  "description": "Short XRP Mobile tutorial: send a multichain asset out to another blockchain. Choosing USDC turns the recipient row into a network picker, the address field changes to the format that chain expects, and the summary shows what the recipient actually receives after the routing cost. The transfer settles in three legs, each with its own hash, which is why it takes longer than a payment on the XRP Ledger. Includes the warning about sending to exchanges from a third party.",
+  "lede": "You hold a stablecoin in a wallet built for the XRP Ledger, and it needs to reach an address on Base. You do not need a second wallet for that.",
+  "video": {
+    "src": "/help/xrp-mobile/send-cross-chain/video.mp4",
+    "poster": "/help/xrp-mobile/send-cross-chain/poster.jpg",
+    "durationSec": 116.2
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Tap Send",
+      "body": "Same Send button as always. The sheet opens on XRP, because that is what the wallet holds most of.",
+      "anchor": "1-tap-send",
+      "src": {
+        "startSec": 0,
+        "endSec": 4.3
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 1.7,
+          "file": "/help/xrp-mobile/send-cross-chain/step-1.png",
+          "alt": "Tap Send"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "Pick the asset",
+      "body": "Open the asset selector and choose what you are actually sending. USDC here, and the sheet rebuilds itself around it.",
+      "anchor": "2-pick-the-asset",
+      "src": {
+        "startSec": 4.3,
+        "endSec": 6.3
+      },
+      "videoAtSec": 6.33,
+      "shots": [
+        {
+          "atSec": 5.2,
+          "file": "/help/xrp-mobile/send-cross-chain/step-2.png",
+          "alt": "Pick the asset"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "The network follows the asset",
+      "body": "The recipient row is no longer fixed to the XRP Ledger: an asset that lives on many chains gets a network picker, because the same USDC exists on all of them.",
+      "anchor": "3-the-network-follows-the-asset",
+      "src": {
+        "startSec": 6.3,
+        "endSec": 8
+      },
+      "videoAtSec": 13.7,
+      "shots": [
+        {
+          "atSec": 7,
+          "file": "/help/xrp-mobile/send-cross-chain/step-3.png",
+          "alt": "The network follows the asset"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "Choose where it lands",
+      "body": "Pick the chain the recipient is on. Base here. Get this wrong and the money goes to a real address on the wrong network, which is not something anyone can undo.",
+      "anchor": "4-choose-where-it-lands",
+      "src": {
+        "startSec": 8,
+        "endSec": 9.9
+      },
+      "videoAtSec": 24.27,
+      "shots": [
+        {
+          "atSec": 8.5,
+          "file": "/help/xrp-mobile/send-cross-chain/step-4.png",
+          "alt": "Choose where it lands"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "caption": "The address changes shape",
+      "body": "Notice the field is asking for a Base address now, not an XRP one. Different chain, different address format, and the app checks what you type against the chain you picked.",
+      "anchor": "5-the-address-changes-shape",
+      "src": {
+        "startSec": 9.9,
+        "endSec": 11.6
+      },
+      "videoAtSec": 33.87,
+      "shots": [
+        {
+          "atSec": 10.3,
+          "file": "/help/xrp-mobile/send-cross-chain/step-5.png",
+          "alt": "The address changes shape"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "caption": "Type or scan it",
+      "body": "Type it, paste it, or scan the QR. This one is another wallet of the same recovery phrase, on the other side.",
+      "anchor": "6-type-or-scan-it",
+      "src": {
+        "startSec": 11.6,
+        "endSec": 15.4
+      },
+      "videoAtSec": 44.83,
+      "shots": [
+        {
+          "atSec": 12.6,
+          "file": "/help/xrp-mobile/send-cross-chain/step-6.png",
+          "alt": "Type or scan it"
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "caption": "Green means it fits",
+      "body": "Green means the address is valid for this network. There is a warning here worth reading: some exchanges will not credit a deposit that arrives from a third party like this one, so if the destination is an exchange, test it with a small amount first.",
+      "anchor": "7-green-means-it-fits",
+      "src": {
+        "startSec": 15.4,
+        "endSec": 18.9
+      },
+      "videoAtSec": 51.87,
+      "shots": [
+        {
+          "atSec": 16.2,
+          "file": "/help/xrp-mobile/send-cross-chain/step-7.png",
+          "alt": "Green means it fits"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "caption": "Send the lot",
+      "body": "Max sends the whole balance, since there is no reserve to keep on this side.",
+      "anchor": "8-send-the-lot",
+      "src": {
+        "startSec": 18.9,
+        "endSec": 20.3
+      },
+      "videoAtSec": 66.37,
+      "shots": [
+        {
+          "atSec": 19.3,
+          "file": "/help/xrp-mobile/send-cross-chain/step-8.png",
+          "alt": "Send the lot"
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "caption": "Read what actually lands",
+      "body": "The summary is where the bridge shows its price: you send 2.812 USDC, the recipient gets 2.806, and the difference is the routing cost. There is no XRP network fee on this one.",
+      "anchor": "9-read-what-actually-lands",
+      "src": {
+        "startSec": 20.3,
+        "endSec": 23
+      },
+      "videoAtSec": 71,
+      "shots": [
+        {
+          "atSec": 21.1,
+          "file": "/help/xrp-mobile/send-cross-chain/step-9.png",
+          "alt": "Read what actually lands"
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "caption": "Sign with your PIN",
+      "body": "Confirm and send, then your PIN. Same signature, on the same phone.",
+      "anchor": "10-sign-with-your-pin",
+      "src": {
+        "startSec": 23,
+        "endSec": 27.5
+      },
+      "videoAtSec": 85.33,
+      "shots": [
+        {
+          "atSec": 24.1,
+          "file": "/help/xrp-mobile/send-cross-chain/step-10.png",
+          "alt": "Sign with your PIN"
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "caption": "Three legs, three hashes",
+      "body": "Now it takes a route: out of your wallet, through the intents layer, onto Base. The screen tracks all three legs, each with its own hash, and pending simply means it is still travelling. It is slower than an XRP payment because it is doing more.",
+      "anchor": "11-three-legs-three-hashes",
+      "src": {
+        "startSec": 27.5,
+        "endSec": 44.3
+      },
+      "videoAtSec": 89.77,
+      "shots": [
+        {
+          "atSec": 35.6,
+          "file": "/help/xrp-mobile/send-cross-chain/step-11.png",
+          "alt": "Three legs, three hashes"
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "caption": "Landed on Base",
+      "body": "Completed, and the last hash is the one that matters: paste it into a Base explorer and there is your USDC, on the other chain.",
+      "anchor": "12-landed-on-base",
+      "src": {
+        "startSec": 44.3,
+        "endSec": 45.8
+      },
+      "videoAtSec": 106.87,
+      "shots": [
+        {
+          "atSec": 44.8,
+          "file": "/help/xrp-mobile/send-cross-chain/step-12.png",
+          "alt": "Landed on Base"
+        }
+      ]
+    }
+  ]
+}

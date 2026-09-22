@@ -1,0 +1,69 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "delete-data",
+  "title": "Wipe XRP Mobile from this phone",
+  "description": "Short XRP Mobile tutorial: remove your wallet from a device with Delete data, in Settings under Security. It wipes the wallets, keys and PIN from that phone. Your funds are untouched because they live on the XRP Ledger, not on the device, but without your recovery phrase nobody can restore the account afterwards.",
+  "lede": "Before that phone goes to anyone else, take the wallet off it. And understand exactly what that does, because there is no undo.",
+  "video": {
+    "src": "/help/xrp-mobile/delete-data/video.mp4",
+    "poster": "/help/xrp-mobile/delete-data/poster.jpg",
+    "durationSec": 24.8
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Settings, then Security",
+      "body": "Open the gear and move to Security. Delete data sits at the bottom, in red, on its own.",
+      "anchor": "1-settings-then-security",
+      "src": {
+        "startSec": 0,
+        "endSec": 2.2
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 0.4,
+          "file": "/help/xrp-mobile/delete-data/step-1.png",
+          "alt": "Settings, then Security"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "What it removes",
+      "body": "It wipes the wallets, the keys and the PIN from this device. Your money is untouched: it never lived on the phone, it lives on the XRP Ledger.",
+      "anchor": "2-what-it-removes",
+      "src": {
+        "startSec": 2.2,
+        "endSec": 3.6
+      },
+      "videoAtSec": 5.2,
+      "shots": [
+        {
+          "atSec": 2.7,
+          "file": "/help/xrp-mobile/delete-data/step-2.png",
+          "alt": "What it removes"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "There is no undo",
+      "body": "Which is exactly why this is only safe if you still have your recovery phrase. Without it, nobody can bring the account back. Not you, not us.",
+      "anchor": "3-there-is-no-undo",
+      "src": {
+        "startSec": 3.6,
+        "endSec": 5.06
+      },
+      "videoAtSec": 14.83,
+      "shots": [
+        {
+          "atSec": 4.1,
+          "file": "/help/xrp-mobile/delete-data/step-3.png",
+          "alt": "There is no undo"
+        }
+      ]
+    }
+  ]
+}

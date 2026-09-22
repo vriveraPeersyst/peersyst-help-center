@@ -1,0 +1,87 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "get-support",
+  "title": "Get help from a human",
+  "description": "Short XRP Mobile tutorial: find help from the Support tab. Start a chat with the team, or read the built in FAQ that covers the questions we get most, why 1 XRP is locked in your wallet, how swaps work, where multichain tokens are held, and why a deposit can take a few minutes. Nobody from XRP Mobile will ever ask for your recovery phrase.",
+  "lede": "Something is not working and you want a person. Before that, the app already answers the questions we get asked most.",
+  "video": {
+    "src": "/help/xrp-mobile/get-support/video.mp4",
+    "poster": "/help/xrp-mobile/get-support/poster.jpg",
+    "durationSec": 31.5
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Settings, then Support",
+      "body": "Open the gear and move to Support. Everything about getting help lives on this one tab.",
+      "anchor": "1-settings-then-support",
+      "src": {
+        "startSec": 0,
+        "endSec": 2
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 0.4,
+          "file": "/help/xrp-mobile/get-support/step-1.png",
+          "alt": "Settings, then Support"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "Chat with the team",
+      "body": "Start a chat puts you through to the team. Nobody there will ever ask for your recovery phrase or your secret numbers, and anyone who does is stealing from you.",
+      "anchor": "2-chat-with-the-team",
+      "src": {
+        "startSec": 2,
+        "endSec": 3.6
+      },
+      "videoAtSec": 4.97,
+      "shots": [
+        {
+          "atSec": 2.7,
+          "file": "/help/xrp-mobile/get-support/step-2.png",
+          "alt": "Chat with the team"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "The 1 XRP question",
+      "body": "Under it sits the FAQ, and it opens with the question we get more than any other: why 1 XRP is locked in your wallet.",
+      "anchor": "3-the-1-xrp-question",
+      "src": {
+        "startSec": 3.6,
+        "endSec": 6
+      },
+      "videoAtSec": 14.1,
+      "shots": [
+        {
+          "atSec": 4,
+          "file": "/help/xrp-mobile/get-support/step-3.png",
+          "alt": "The 1 XRP question"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "Swaps, chains and waiting",
+      "body": "Then how swaps work, where your Bitcoin and Ethereum are actually held, why a deposit takes a few minutes, and whether you can receive from other networks.",
+      "anchor": "4-swaps-chains-and-waiting",
+      "src": {
+        "startSec": 6,
+        "endSec": 8.96
+      },
+      "videoAtSec": 22,
+      "shots": [
+        {
+          "atSec": 6.5,
+          "file": "/help/xrp-mobile/get-support/step-4.png",
+          "alt": "Swaps, chains and waiting"
+        }
+      ]
+    }
+  ]
+}

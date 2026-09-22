@@ -1,0 +1,141 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "backup-your-wallets",
+  "title": "Back up your wallet the right way",
+  "description": "Step by step XRP Mobile tutorial: back up your wallet from Settings, Security. Pick the wallet, choose the recovery phrase over the private key, pass the three question quiz, confirm with your PIN, and write the 12 words down on paper. Nobody from XRP Mobile will ever ask you for them.",
+  "lede": "Lose your phone and you lose nothing, as long as you did this once. It takes a minute, and the app makes you earn it.",
+  "video": {
+    "src": "/help/xrp-mobile/backup-your-wallets/video.mp4",
+    "poster": "/help/xrp-mobile/backup-your-wallets/poster.jpg",
+    "durationSec": 57.8
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Settings, then Security",
+      "body": "Open the gear and move to Security. If your backup is still pending, the app has been telling you so with a red flag right here.",
+      "anchor": "1-settings-then-security",
+      "src": {
+        "startSec": 0,
+        "endSec": 3.5
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 1.3,
+          "file": "/help/xrp-mobile/backup-your-wallets/step-1.png",
+          "alt": "Settings, then Security"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "Pick the wallet",
+      "body": "Choose which wallet you're backing up. Each one has its own phrase, so having done one does not cover the others.",
+      "anchor": "2-pick-the-wallet",
+      "src": {
+        "startSec": 3.5,
+        "endSec": 5.5
+      },
+      "videoAtSec": 7.23,
+      "shots": [
+        {
+          "atSec": 4.1,
+          "file": "/help/xrp-mobile/backup-your-wallets/step-2.png",
+          "alt": "Pick the wallet"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "Phrase or private key",
+      "body": "You can export the recovery phrase or the private key. The phrase is what restores the wallet anywhere, so that is the one to write down.",
+      "anchor": "3-phrase-or-private-key",
+      "src": {
+        "startSec": 5.5,
+        "endSec": 6.9
+      },
+      "videoAtSec": 14.07,
+      "shots": [
+        {
+          "atSec": 5.9,
+          "file": "/help/xrp-mobile/backup-your-wallets/step-3.png",
+          "alt": "Phrase or private key"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "A quiz first, on purpose",
+      "body": "Before it shows you anything, the app asks you to prove you understand what you are about to hold. This is not bureaucracy: people lose money to exactly these three questions.",
+      "anchor": "4-a-quiz-first-on-purpose",
+      "src": {
+        "startSec": 6.9,
+        "endSec": 9
+      },
+      "videoAtSec": 22.07,
+      "shots": [
+        {
+          "atSec": 7.6,
+          "file": "/help/xrp-mobile/backup-your-wallets/step-4.png",
+          "alt": "A quiz first, on purpose"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "caption": "Three questions",
+      "body": "Never share your private key. Nobody from XRP Mobile will ever ask for your phrase. And if you think someone has seen it, move your funds to a new wallet immediately.",
+      "anchor": "5-three-questions",
+      "src": {
+        "startSec": 9,
+        "endSec": 17.6
+      },
+      "videoAtSec": 32.6,
+      "shots": [
+        {
+          "atSec": 12.3,
+          "file": "/help/xrp-mobile/backup-your-wallets/step-5.png",
+          "alt": "Three questions"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "caption": "Your PIN, again",
+      "body": "Then your PIN, because passing a quiz is not proof that it is your phone.",
+      "anchor": "6-your-pin-again",
+      "src": {
+        "startSec": 17.6,
+        "endSec": 21.7
+      },
+      "videoAtSec": 42.63,
+      "shots": [
+        {
+          "atSec": 18.6,
+          "file": "/help/xrp-mobile/backup-your-wallets/step-6.png",
+          "alt": "Your PIN, again"
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "caption": "Write it down, then close",
+      "body": "And there it is. Write the words on paper, in order, and put the paper somewhere a thief and a fire cannot reach. Not a screenshot, not a note on your phone.",
+      "anchor": "7-write-it-down-then-close",
+      "src": {
+        "startSec": 21.7,
+        "endSec": 24.13
+      },
+      "videoAtSec": 47.43,
+      "shots": [
+        {
+          "atSec": 22.9,
+          "file": "/help/xrp-mobile/backup-your-wallets/step-7.png",
+          "alt": "Write it down, then close"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "token-research",
+  "title": "Look a token up before you buy it",
+  "description": "Short XRP Mobile tutorial: open any token's page from the Explore market. Read its chart from one day to all time, then the numbers that matter, market cap, 24 hour volume and total supply, plus links to the project's website and whitepaper. Not financial advice, just where to look.",
+  "lede": "Before you put money into a ticker, spend thirty seconds finding out what it actually is. The app has the page for it.",
+  "video": {
+    "src": "/help/xrp-mobile/token-research/video.mp4",
+    "poster": "/help/xrp-mobile/token-research/poster.jpg",
+    "durationSec": 32.2
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Open it from the market",
+      "body": "In Explore, tap any row. Every listed token has its own page, whether or not you hold it.",
+      "anchor": "1-open-it-from-the-market",
+      "src": {
+        "startSec": 0,
+        "endSec": 3.5
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 1.5,
+          "file": "/help/xrp-mobile/token-research/step-1.png",
+          "alt": "Open it from the market"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "Position is what you hold",
+      "body": "It opens on Position, which is your own balance in that token. On a fresh wallet that is a row of zeros, so move across to Investor Info.",
+      "anchor": "2-position-is-what-you-hold",
+      "src": {
+        "startSec": 3.5,
+        "endSec": 6
+      },
+      "videoAtSec": 5.77,
+      "shots": [
+        {
+          "atSec": 4.2,
+          "file": "/help/xrp-mobile/token-research/step-2.png",
+          "alt": "Position is what you hold"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "The chart",
+      "body": "Now the candles, and a price you can read against a real scale instead of a single number.",
+      "anchor": "3-the-chart",
+      "src": {
+        "startSec": 6,
+        "endSec": 8.4
+      },
+      "videoAtSec": 14.3,
+      "shots": [
+        {
+          "atSec": 6.3,
+          "file": "/help/xrp-mobile/token-research/step-3.png",
+          "alt": "The chart"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "Then the boring numbers",
+      "body": "And under it the numbers that actually matter: market cap, 24 hour volume and total supply, with links to the project's own site, its X account and its report on Messari.",
+      "anchor": "4-then-the-boring-numbers",
+      "src": {
+        "startSec": 8.4,
+        "endSec": 12.4
+      },
+      "videoAtSec": 19.67,
+      "shots": [
+        {
+          "atSec": 9.2,
+          "file": "/help/xrp-mobile/token-research/step-4.png",
+          "alt": "Then the boring numbers"
+        }
+      ]
+    }
+  ]
+}

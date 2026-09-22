@@ -1,0 +1,69 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "add-second-wallet",
+  "title": "Add a second wallet",
+  "description": "Short XRP Mobile tutorial: add another wallet from the home carousel. Create a brand new one or import an existing one, keep balances separate, and switch between them with a swipe. Creating an extra wallet is the one place the app lets you choose between a 12 word recovery phrase and 8 rows of secret numbers.",
+  "lede": "Keeping your spending money apart from the rest is easier when they are different wallets. XRP Mobile holds as many as you want.",
+  "video": {
+    "src": "/help/xrp-mobile/add-second-wallet/video.mp4",
+    "poster": "/help/xrp-mobile/add-second-wallet/poster.jpg",
+    "durationSec": 26.8
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Swipe past your wallet",
+      "body": "Your wallets live in a carousel on the home screen. Swipe past the last one to reach the add slide.",
+      "anchor": "1-swipe-past-your-wallet",
+      "src": {
+        "startSec": 0,
+        "endSec": 1.6
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 0.4,
+          "file": "/help/xrp-mobile/add-second-wallet/step-1.png",
+          "alt": "Swipe past your wallet"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "Create or import",
+      "body": "You can make a brand new one, or bring in a wallet you already own with its recovery phrase. Balances stay separate and you switch between them with a swipe.",
+      "anchor": "2-create-or-import",
+      "src": {
+        "startSec": 1.6,
+        "endSec": 2.9
+      },
+      "videoAtSec": 5.47,
+      "shots": [
+        {
+          "atSec": 2,
+          "file": "/help/xrp-mobile/add-second-wallet/step-2.png",
+          "alt": "Create or import"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "Phrase or secret numbers",
+      "body": "And here is the part only this screen offers: a new wallet can be protected by a 12 word recovery phrase, or by 8 rows of secret numbers, the format Xaman users already know.",
+      "anchor": "3-phrase-or-secret-numbers",
+      "src": {
+        "startSec": 2.9,
+        "endSec": 4.26
+      },
+      "videoAtSec": 14.33,
+      "shots": [
+        {
+          "atSec": 3.3,
+          "file": "/help/xrp-mobile/add-second-wallet/step-3.png",
+          "alt": "Phrase or secret numbers"
+        }
+      ]
+    }
+  ]
+}

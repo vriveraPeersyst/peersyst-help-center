@@ -1,0 +1,105 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "activity-history",
+  "title": "Read your activity",
+  "description": "Short XRP Mobile tutorial: read your transaction history. Switch the wallet home from balances to activity, find any payment sent or received, and open its receipt: counterparty, network fee, date, status and the transaction hash you can check on a public XRP Ledger explorer. Also, what those tiny incoming amounts you never asked for are, and why you should ignore them.",
+  "lede": "Did that payment actually go through? Every transaction your wallet has ever made or received is one tap away, with the receipt that settles the argument.",
+  "video": {
+    "src": "/help/xrp-mobile/activity-history/video.mp4",
+    "poster": "/help/xrp-mobile/activity-history/poster.jpg",
+    "durationSec": 54.6
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Balances, then history",
+      "body": "The wallet home has two tabs. Currencies is what you hold right now. Activity is how it got there.",
+      "anchor": "1-balances-then-history",
+      "src": {
+        "startSec": 0,
+        "endSec": 1
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 0.2,
+          "file": "/help/xrp-mobile/activity-history/step-1.png",
+          "alt": "Balances, then history"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "Everything in and out",
+      "body": "Every payment, sent and received, newest first, with the amount in XRP and in your own currency. The tiny incoming amounts you do not recognise are spam: the XRP Ledger lets anyone send you a fraction of a cent, and some senders use it to advertise. Ignore them, and never follow a link one of them carries.",
+      "anchor": "2-everything-in-and-out",
+      "src": {
+        "startSec": 1,
+        "endSec": 2.3
+      },
+      "videoAtSec": 5.9,
+      "shots": [
+        {
+          "atSec": 1.4,
+          "file": "/help/xrp-mobile/activity-history/step-2.png",
+          "alt": "Everything in and out"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "Open one for the receipt",
+      "body": "Tap any entry to open its receipt.",
+      "anchor": "3-open-one-for-the-receipt",
+      "src": {
+        "startSec": 2.3,
+        "endSec": 3.2
+      },
+      "videoAtSec": 26.7,
+      "shots": [
+        {
+          "atSec": 2.7,
+          "file": "/help/xrp-mobile/activity-history/step-3.png",
+          "alt": "Open one for the receipt"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "Fee, status and hash",
+      "body": "Who it went to, what the network charged, the date, and whether it completed. At the bottom, the transaction hash: that is the proof. Copy it, or open it in the explorer to see the same payment on the public ledger, from outside the app.",
+      "anchor": "4-fee-status-and-hash",
+      "src": {
+        "startSec": 3.2,
+        "endSec": 4.4
+      },
+      "videoAtSec": 28.9,
+      "shots": [
+        {
+          "atSec": 3.4,
+          "file": "/help/xrp-mobile/activity-history/step-4.png",
+          "alt": "Fee, status and hash"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "caption": "Back to your balances",
+      "body": "Back out and you are on your balances again. Nothing here is stored by us: the list is read from the XRP Ledger every time you open it.",
+      "anchor": "5-back-to-your-balances",
+      "src": {
+        "startSec": 4.4,
+        "endSec": 7.3
+      },
+      "videoAtSec": 45.4,
+      "shots": [
+        {
+          "atSec": 5.7,
+          "file": "/help/xrp-mobile/activity-history/step-5.png",
+          "alt": "Back to your balances"
+        }
+      ]
+    }
+  ]
+}

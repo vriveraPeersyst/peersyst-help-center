@@ -1,0 +1,231 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "send-destination-tag",
+  "title": "Send with a destination tag",
+  "description": "Short XRP Mobile tutorial: send XRP with a destination tag. What a destination tag actually is, why exchanges need one when personal wallets do not, where to find yours on the exchange's deposit page, and what the transaction looks like once the tag rides along with it. Ends with the transaction hash, the one thing support will ask for if a deposit goes missing.",
+  "lede": "Sending XRP to an exchange? There is one field that decides whether it reaches your account there or sits in limbo, and it is hidden until you ask for it.",
+  "video": {
+    "src": "/help/xrp-mobile/send-destination-tag/video.mp4",
+    "poster": "/help/xrp-mobile/send-destination-tag/poster.jpg",
+    "durationSec": 98
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Tap Send",
+      "body": "Start the same way as any payment: from the wallet home, tap Send.",
+      "anchor": "1-tap-send",
+      "src": {
+        "startSec": 0,
+        "endSec": 4.3
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 1.7,
+          "file": "/help/xrp-mobile/send-destination-tag/step-1.png",
+          "alt": "Tap Send"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "Choose the recipient",
+      "body": "Tap the address field to open the recipient sheet.",
+      "anchor": "2-choose-the-recipient",
+      "src": {
+        "startSec": 4.3,
+        "endSec": 5.8
+      },
+      "videoAtSec": 4.17,
+      "shots": [
+        {
+          "atSec": 4.8,
+          "file": "/help/xrp-mobile/send-destination-tag/step-2.png",
+          "alt": "Choose the recipient"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "Type or scan the address",
+      "body": "Type the exchange's deposit address, or scan its QR. This is the address of the exchange itself, shared by thousands of customers.",
+      "anchor": "3-type-or-scan-the-address",
+      "src": {
+        "startSec": 5.8,
+        "endSec": 8.6
+      },
+      "videoAtSec": 7.13,
+      "shots": [
+        {
+          "atSec": 6.5,
+          "file": "/help/xrp-mobile/send-destination-tag/step-3.png",
+          "alt": "Type or scan the address"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "Green means it checks out",
+      "body": "Green means the address is valid, and that is exactly the problem: a valid exchange address on its own does not say which account inside the exchange the money belongs to.",
+      "anchor": "4-green-means-it-checks-out",
+      "src": {
+        "startSec": 8.6,
+        "endSec": 12
+      },
+      "videoAtSec": 16.1,
+      "shots": [
+        {
+          "atSec": 9.2,
+          "file": "/help/xrp-mobile/send-destination-tag/step-4.png",
+          "alt": "Green means it checks out"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "caption": "Add destination tag",
+      "body": "That is what the destination tag is for. It stays hidden until you tap Add destination tag, so nobody sends one by accident.",
+      "anchor": "5-add-destination-tag",
+      "src": {
+        "startSec": 12,
+        "endSec": 15.5
+      },
+      "videoAtSec": 26.8,
+      "shots": [
+        {
+          "atSec": 12.8,
+          "file": "/help/xrp-mobile/send-destination-tag/step-5.png",
+          "alt": "Add destination tag"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "caption": "Type the tag they gave you",
+      "body": "Type the exact number the exchange gave you, on its deposit page, next to the address. It is your account number inside their wallet. Only add one when they ask for it: a tag sent to a personal wallet is simply ignored.",
+      "anchor": "6-type-the-tag-they-gave-you",
+      "src": {
+        "startSec": 15.5,
+        "endSec": 18.9
+      },
+      "videoAtSec": 34.7,
+      "shots": [
+        {
+          "atSec": 16.1,
+          "file": "/help/xrp-mobile/send-destination-tag/step-6.png",
+          "alt": "Type the tag they gave you"
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "caption": "Then the amount",
+      "body": "Then the amount, as usual, typed on the pad or taken from the percentage shortcuts.",
+      "anchor": "7-then-the-amount",
+      "src": {
+        "startSec": 18.9,
+        "endSec": 23.3
+      },
+      "videoAtSec": 49.33,
+      "shots": [
+        {
+          "atSec": 20,
+          "file": "/help/xrp-mobile/send-destination-tag/step-7.png",
+          "alt": "Then the amount"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "caption": "Address and tag, side by side",
+      "body": "Before you continue, read the address and the tag together. Both have to match the deposit page you copied them from.",
+      "anchor": "8-address-and-tag-side-by-side",
+      "src": {
+        "startSec": 23.3,
+        "endSec": 25.8
+      },
+      "videoAtSec": 54.73,
+      "shots": [
+        {
+          "atSec": 24,
+          "file": "/help/xrp-mobile/send-destination-tag/step-8.png",
+          "alt": "Address and tag, side by side"
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "caption": "The tag rides with the payment",
+      "body": "The summary shows the tag on its own line. It travels inside the transaction, which is how the exchange knows to credit you and not somebody else.",
+      "anchor": "9-the-tag-rides-with-the-payment",
+      "src": {
+        "startSec": 25.8,
+        "endSec": 28.5
+      },
+      "videoAtSec": 61.2,
+      "shots": [
+        {
+          "atSec": 26.3,
+          "file": "/help/xrp-mobile/send-destination-tag/step-9.png",
+          "alt": "The tag rides with the payment"
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "caption": "Sign with your PIN",
+      "body": "Confirm and send, then your PIN. From here it is irreversible: an exchange deposit with the wrong tag becomes a support ticket, and sometimes not even that.",
+      "anchor": "10-sign-with-your-pin",
+      "src": {
+        "startSec": 28.5,
+        "endSec": 32
+      },
+      "videoAtSec": 70.17,
+      "shots": [
+        {
+          "atSec": 29.3,
+          "file": "/help/xrp-mobile/send-destination-tag/step-10.png",
+          "alt": "Sign with your PIN"
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "caption": "The ledger settles it",
+      "body": "The XRP Ledger settles it in seconds. Crediting it on the other side is the exchange's job, and that can take a few minutes longer.",
+      "anchor": "11-the-ledger-settles-it",
+      "src": {
+        "startSec": 32,
+        "endSec": 47
+      },
+      "videoAtSec": 80.93,
+      "shots": [
+        {
+          "atSec": 35.6,
+          "file": "/help/xrp-mobile/send-destination-tag/step-11.png",
+          "alt": "The ledger settles it"
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "caption": "Sent, tag included",
+      "body": "Done. Keep the transaction hash: if a deposit ever goes missing, that string plus the tag is what support will ask you for.",
+      "anchor": "12-sent-tag-included",
+      "src": {
+        "startSec": 47,
+        "endSec": 49.8
+      },
+      "videoAtSec": 89.33,
+      "shots": [
+        {
+          "atSec": 47.8,
+          "file": "/help/xrp-mobile/send-destination-tag/step-12.png",
+          "alt": "Sent, tag included"
+        }
+      ]
+    }
+  ]
+}

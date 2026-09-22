@@ -1,0 +1,105 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "buy-xrp",
+  "title": "Buy XRP with a card",
+  "description": "Short XRP Mobile tutorial: buy XRP with a credit or debit card. Pick an amount, watch the live quote update, and read the full breakdown before committing: the rate, the provider's fee, how much XRP actually reaches your wallet, and how long it takes. The card details are entered with the third party provider, never inside the wallet.",
+  "lede": "Buying crypto with a card is easy. Knowing what it costs you is the part nobody shows. XRP Mobile puts the whole bill on one screen before you commit.",
+  "video": {
+    "src": "/help/xrp-mobile/buy-xrp/video.mp4",
+    "poster": "/help/xrp-mobile/buy-xrp/poster.jpg",
+    "durationSec": 37.2
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Tap Buy",
+      "body": "From the wallet home, tap Buy. The XRP lands straight in this wallet, at the address you already have.",
+      "anchor": "1-tap-buy",
+      "src": {
+        "startSec": 0,
+        "endSec": 3
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 0.4,
+          "file": "/help/xrp-mobile/buy-xrp/step-1.png",
+          "alt": "Tap Buy"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "Pick an amount",
+      "body": "Pick an amount, or type your own. Underneath it tells you roughly how much XRP that becomes at today's price.",
+      "anchor": "2-pick-an-amount",
+      "src": {
+        "startSec": 3,
+        "endSec": 7
+      },
+      "videoAtSec": 6.7,
+      "shots": [
+        {
+          "atSec": 3.6,
+          "file": "/help/xrp-mobile/buy-xrp/step-2.png",
+          "alt": "Pick an amount"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "Change it, the quote follows",
+      "body": "Change your mind and everything recalculates, because this is a live quote from the provider rather than a rough estimate.",
+      "anchor": "3-change-it-the-quote-follows",
+      "src": {
+        "startSec": 7,
+        "endSec": 9.5
+      },
+      "videoAtSec": 13.63,
+      "shots": [
+        {
+          "atSec": 7.6,
+          "file": "/help/xrp-mobile/buy-xrp/step-3.png",
+          "alt": "Change it, the quote follows"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "Read the whole bill",
+      "body": "Here is the part worth reading: the rate, the provider's fee, exactly how much XRP reaches you, and how long it takes.",
+      "anchor": "4-read-the-whole-bill",
+      "src": {
+        "startSec": 9.5,
+        "endSec": 11.5
+      },
+      "videoAtSec": 20.23,
+      "shots": [
+        {
+          "atSec": 10,
+          "file": "/help/xrp-mobile/buy-xrp/step-4.png",
+          "alt": "Read the whole bill"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "caption": "The next tap leaves the app",
+      "body": "Continue hands you to the payment provider for the card details, outside XRP Mobile. Your card never touches the wallet, and neither do we.",
+      "anchor": "5-the-next-tap-leaves-the-app",
+      "src": {
+        "startSec": 11.5,
+        "endSec": 12.27
+      },
+      "videoAtSec": 28.03,
+      "shots": [
+        {
+          "atSec": 11.7,
+          "file": "/help/xrp-mobile/buy-xrp/step-5.png",
+          "alt": "The next tap leaves the app"
+        }
+      ]
+    }
+  ]
+}

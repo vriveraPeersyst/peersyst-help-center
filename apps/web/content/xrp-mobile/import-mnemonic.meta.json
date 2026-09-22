@@ -1,0 +1,105 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "import-mnemonic",
+  "title": "Import a wallet with your recovery phrase",
+  "description": "Step by step XRP Mobile tutorial: import an existing XRP Ledger wallet using its 12 word recovery phrase. Type the words in order or paste them, name the wallet, set a device PIN, and your account comes back with the same address and the same balance. The keys stay on your phone, and the PIN is local to the device.",
+  "lede": "You already have an XRP wallet somewhere else. Here is how to bring it into XRP Mobile, with the same address and the same balance.",
+  "video": {
+    "src": "/help/xrp-mobile/import-mnemonic/video.mp4",
+    "poster": "/help/xrp-mobile/import-mnemonic/poster.jpg",
+    "durationSec": 33.1
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Tap Import wallet",
+      "body": "From the welcome screen, tap Import wallet instead of creating one.",
+      "anchor": "1-tap-import-wallet",
+      "src": {
+        "startSec": 0,
+        "endSec": 6
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 1.9,
+          "file": "/help/xrp-mobile/import-mnemonic/step-1.png",
+          "alt": "Tap Import wallet"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "Choose recovery phrase",
+      "body": "Pick recovery phrase. That is the 12 words almost every wallet gives you when you first set it up.",
+      "anchor": "2-choose-recovery-phrase",
+      "src": {
+        "startSec": 6,
+        "endSec": 11
+      },
+      "videoAtSec": 3.93,
+      "shots": [
+        {
+          "atSec": 7,
+          "file": "/help/xrp-mobile/import-mnemonic/step-2.png",
+          "alt": "Choose recovery phrase"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "One word per box",
+      "body": "Type your words in order, one per box. There is a paste button if you keep them in a password manager, and the app checks the phrase is valid before it lets you continue.",
+      "anchor": "3-one-word-per-box",
+      "src": {
+        "startSec": 11,
+        "endSec": 96
+      },
+      "videoAtSec": 9.67,
+      "shots": [
+        {
+          "atSec": 21.3,
+          "file": "/help/xrp-mobile/import-mnemonic/step-3.png",
+          "alt": "One word per box"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "Name it and set a PIN",
+      "body": "Give it a name and set a PIN for this device. The PIN is local: it protects the app on this phone, it is not part of your wallet.",
+      "anchor": "4-name-it-and-set-a-pin",
+      "src": {
+        "startSec": 96,
+        "endSec": 108
+      },
+      "videoAtSec": 19.4,
+      "shots": [
+        {
+          "atSec": 97,
+          "file": "/help/xrp-mobile/import-mnemonic/step-4.png",
+          "alt": "Name it and set a PIN"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "caption": "Same wallet, new phone",
+      "body": "And there it is. Same address, same balance, and the keys never left your hands.",
+      "anchor": "5-same-wallet-new-phone",
+      "src": {
+        "startSec": 108,
+        "endSec": 112.53
+      },
+      "videoAtSec": 27.47,
+      "shots": [
+        {
+          "atSec": 110.2,
+          "file": "/help/xrp-mobile/import-mnemonic/step-5.png",
+          "alt": "Same wallet, new phone"
+        }
+      ]
+    }
+  ]
+}

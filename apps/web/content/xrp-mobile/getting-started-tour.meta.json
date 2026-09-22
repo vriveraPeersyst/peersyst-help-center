@@ -1,0 +1,123 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "getting-started-tour",
+  "title": "Your first minute in XRP Mobile",
+  "description": "Just installed XRP Mobile? This short tour walks through every tab: the Wallet home with buy, send, receive and swap, the Earn roadmap, the Explore market, the Share referral campaign, and the settings behind the gear. A good first watch before any other tutorial.",
+  "lede": "You've just made a wallet and the app is staring back at you. Here is what every tab does, in under a minute.",
+  "video": {
+    "src": "/help/xrp-mobile/getting-started-tour/video.mp4",
+    "poster": "/help/xrp-mobile/getting-started-tour/poster.jpg",
+    "durationSec": 37.3
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Wallet is home",
+      "body": "Wallet is where you land: your balance, the four things you can do with it, and your tokens and activity underneath.",
+      "anchor": "1-wallet-is-home",
+      "src": {
+        "startSec": 0,
+        "endSec": 1
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 0.2,
+          "file": "/help/xrp-mobile/getting-started-tour/step-1.png",
+          "alt": "Wallet is home"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "Earn, still on the way",
+      "body": "Earn is honest about itself. There is no yield product yet, just what we are building and a way to be told when it lands.",
+      "anchor": "2-earn-still-on-the-way",
+      "src": {
+        "startSec": 1,
+        "endSec": 2.3
+      },
+      "videoAtSec": 7.27,
+      "shots": [
+        {
+          "atSec": 1.4,
+          "file": "/help/xrp-mobile/getting-started-tour/step-2.png",
+          "alt": "Earn, still on the way"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "Explore is the market",
+      "body": "Explore is the market: what is moving today, every token we list, and a page per token with its chart.",
+      "anchor": "3-explore-is-the-market",
+      "src": {
+        "startSec": 2.3,
+        "endSec": 3.6
+      },
+      "videoAtSec": 14.53,
+      "shots": [
+        {
+          "atSec": 2.7,
+          "file": "/help/xrp-mobile/getting-started-tour/step-3.png",
+          "alt": "Explore is the market"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "Share is the campaign",
+      "body": "Share is the referral campaign. Your points, the leaderboard, and the tasks that earn you a slice of the pot.",
+      "anchor": "4-share-is-the-campaign",
+      "src": {
+        "startSec": 3.6,
+        "endSec": 4.9
+      },
+      "videoAtSec": 20.73,
+      "shots": [
+        {
+          "atSec": 4,
+          "file": "/help/xrp-mobile/getting-started-tour/step-4.png",
+          "alt": "Share is the campaign"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "caption": "Settings behind the gear",
+      "body": "The gear holds the rest: your currency, your language, your PIN, your backup, and support.",
+      "anchor": "5-settings-behind-the-gear",
+      "src": {
+        "startSec": 4.9,
+        "endSec": 6.5
+      },
+      "videoAtSec": 27.73,
+      "shots": [
+        {
+          "atSec": 5.6,
+          "file": "/help/xrp-mobile/getting-started-tour/step-5.png",
+          "alt": "Settings behind the gear"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "caption": "Back to your wallet",
+      "body": "And you are never more than one tap from your wallet.",
+      "anchor": "6-back-to-your-wallet",
+      "src": {
+        "startSec": 6.5,
+        "endSec": 7.77
+      },
+      "videoAtSec": 33.97,
+      "shots": [
+        {
+          "atSec": 7,
+          "file": "/help/xrp-mobile/getting-started-tour/step-6.png",
+          "alt": "Back to your wallet"
+        }
+      ]
+    }
+  ]
+}

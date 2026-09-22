@@ -1,0 +1,101 @@
+---
+title: "Send to another chain"
+description: "Short XRP Mobile tutorial: send a multichain asset out to another blockchain. Choosing USDC turns the recipient row into a network picker, the address field changes to the format that chain expects, and the summary shows what the recipient actually receives after the routing cost. The transfer settles in three legs, each with its own hash, which is why it takes longer than a payment on the XRP Ledger. Includes the warning about sending to exchanges from a third party."
+brand: xrp-mobile
+feature: send-cross-chain
+kind: guide
+video:
+  src: "/help/xrp-mobile/send-cross-chain/video.mp4"
+  poster: "/help/xrp-mobile/send-cross-chain/poster.jpg"
+  durationSec: 116.2
+chapters:
+  - { step: 1, atSec: 0, label: "Tap Send" }
+  - { step: 2, atSec: 6.33, label: "Pick the asset" }
+  - { step: 3, atSec: 13.7, label: "The network follows the asset" }
+  - { step: 4, atSec: 24.27, label: "Choose where it lands" }
+  - { step: 5, atSec: 33.87, label: "The address changes shape" }
+  - { step: 6, atSec: 44.83, label: "Type or scan it" }
+  - { step: 7, atSec: 51.87, label: "Green means it fits" }
+  - { step: 8, atSec: 66.37, label: "Send the lot" }
+  - { step: 9, atSec: 71, label: "Read what actually lands" }
+  - { step: 10, atSec: 85.33, label: "Sign with your PIN" }
+  - { step: 11, atSec: 89.77, label: "Three legs, three hashes" }
+  - { step: 12, atSec: 106.87, label: "Landed on Base" }
+---
+You hold a stablecoin in a wallet built for the XRP Ledger, and it needs to reach an address on Base. You do not need a second wallet for that.
+
+<video controls preload="metadata" poster="/help/xrp-mobile/send-cross-chain/poster.jpg" src="/help/xrp-mobile/send-cross-chain/video.mp4"></video>
+
+Prefer to read? The steps below are the same walkthrough, 12 screens and 116 seconds of video.
+
+## 1. Tap Send
+
+![Tap Send](/help/xrp-mobile/send-cross-chain/step-1.png)
+
+Same Send button as always. The sheet opens on XRP, because that is what the wallet holds most of.
+
+## 2. Pick the asset
+
+![Pick the asset](/help/xrp-mobile/send-cross-chain/step-2.png)
+
+Open the asset selector and choose what you are actually sending. USDC here, and the sheet rebuilds itself around it.
+
+## 3. The network follows the asset
+
+![The network follows the asset](/help/xrp-mobile/send-cross-chain/step-3.png)
+
+The recipient row is no longer fixed to the XRP Ledger: an asset that lives on many chains gets a network picker, because the same USDC exists on all of them.
+
+## 4. Choose where it lands
+
+![Choose where it lands](/help/xrp-mobile/send-cross-chain/step-4.png)
+
+Pick the chain the recipient is on. Base here. Get this wrong and the money goes to a real address on the wrong network, which is not something anyone can undo.
+
+## 5. The address changes shape
+
+![The address changes shape](/help/xrp-mobile/send-cross-chain/step-5.png)
+
+Notice the field is asking for a Base address now, not an XRP one. Different chain, different address format, and the app checks what you type against the chain you picked.
+
+## 6. Type or scan it
+
+![Type or scan it](/help/xrp-mobile/send-cross-chain/step-6.png)
+
+Type it, paste it, or scan the QR. This one is another wallet of the same recovery phrase, on the other side.
+
+## 7. Green means it fits
+
+![Green means it fits](/help/xrp-mobile/send-cross-chain/step-7.png)
+
+Green means the address is valid for this network. There is a warning here worth reading: some exchanges will not credit a deposit that arrives from a third party like this one, so if the destination is an exchange, test it with a small amount first.
+
+## 8. Send the lot
+
+![Send the lot](/help/xrp-mobile/send-cross-chain/step-8.png)
+
+Max sends the whole balance, since there is no reserve to keep on this side.
+
+## 9. Read what actually lands
+
+![Read what actually lands](/help/xrp-mobile/send-cross-chain/step-9.png)
+
+The summary is where the bridge shows its price: you send 2.812 USDC, the recipient gets 2.806, and the difference is the routing cost. There is no XRP network fee on this one.
+
+## 10. Sign with your PIN
+
+![Sign with your PIN](/help/xrp-mobile/send-cross-chain/step-10.png)
+
+Confirm and send, then your PIN. Same signature, on the same phone.
+
+## 11. Three legs, three hashes
+
+![Three legs, three hashes](/help/xrp-mobile/send-cross-chain/step-11.png)
+
+Now it takes a route: out of your wallet, through the intents layer, onto Base. The screen tracks all three legs, each with its own hash, and pending simply means it is still travelling. It is slower than an XRP payment because it is doing more.
+
+## 12. Landed on Base
+
+![Landed on Base](/help/xrp-mobile/send-cross-chain/step-12.png)
+
+Completed, and the last hash is the one that matters: paste it into a Base explorer and there is your USDC, on the other chain.

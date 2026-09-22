@@ -3,27 +3,27 @@
   "brandName": "XRP Mobile",
   "id": "create-wallet",
   "title": "Create your XRP wallet",
-  "description": "In this quick XRP Mobile walkthrough you'll create a self custody XRP wallet on the XRP Ledger, back up your recovery phrase and set a PIN. XRP Mobile is a noncustodial wallet where you can buy, send, receive and swap XRP. Perfect if you're getting started with XRP or self custody.",
+  "description": "In this quick XRP Mobile walkthrough you'll create a self custody XRP wallet on the XRP Ledger, save your recovery phrase, set a PIN and enter a referral code. XRP Mobile is a noncustodial wallet where you can buy, send, receive and swap XRP. Perfect if you're getting started with XRP or self custody.",
   "lede": "Want your XRP in a wallet that is truly yours? Let's set one up in under a minute.",
   "video": {
     "src": "/help/xrp-mobile/create-wallet/video.mp4",
     "poster": "/help/xrp-mobile/create-wallet/poster.jpg",
-    "durationSec": 57.4
+    "durationSec": 50
   },
   "steps": [
     {
       "n": 1,
       "caption": "Open XRP Mobile",
-      "body": "Open XRP Mobile. It's a self custody wallet, so the keys stay with you, not with an exchange.",
+      "body": "Open XRP Mobile. It's a self custody wallet, so the keys stay on your phone, not with an exchange.",
       "anchor": "1-open-xrp-mobile",
       "src": {
         "startSec": 0,
-        "endSec": 5.4
+        "endSec": 4.9
       },
-      "videoAtSec": 5.37,
+      "videoAtSec": 0,
       "shots": [
         {
-          "atSec": 1.6,
+          "atSec": 1.9,
           "file": "/help/xrp-mobile/create-wallet/step-1.png",
           "alt": "Open XRP Mobile"
         }
@@ -35,13 +35,13 @@
       "body": "Tap Create wallet. You could import one you already have, but today we start fresh.",
       "anchor": "2-tap-create-wallet",
       "src": {
-        "startSec": 5.4,
-        "endSec": 13.8
+        "startSec": 4.9,
+        "endSec": 9.4
       },
-      "videoAtSec": 11.47,
+      "videoAtSec": 6.5,
       "shots": [
         {
-          "atSec": 7.4,
+          "atSec": 6.2,
           "file": "/help/xrp-mobile/create-wallet/step-2.png",
           "alt": "Tap Create wallet"
         }
@@ -49,83 +49,109 @@
     },
     {
       "n": 3,
-      "caption": "Back up your recovery phrase",
-      "body": "Tap to reveal your recovery phrase, then write the 12 words down in order and store them somewhere safe. Anyone with these words can take your funds, so never share them.",
-      "anchor": "3-back-up-your-recovery-phrase",
+      "caption": "Reveal and write down your 12 words",
+      "body": "Tap to reveal your recovery phrase, then write the 12 words down in order and keep them somewhere safe. Anyone who has them can take your funds, and nobody from XRP Mobile will ever ask you for them.",
+      "anchor": "3-reveal-and-write-down-your-12-words",
       "src": {
-        "startSec": 13.8,
-        "endSec": 16.3
+        "startSec": 9.4,
+        "endSec": 12
       },
-      "videoAtSec": 16.6,
+      "videoAtSec": 11.67,
       "shots": [
         {
-          "atSec": 14.8,
+          "atSec": 9.9,
           "file": "/help/xrp-mobile/create-wallet/step-3.png",
-          "alt": "Back up your recovery phrase"
+          "alt": "Reveal and write down your 12 words"
         }
       ]
     },
     {
       "n": 4,
-      "caption": "Name it and set your PIN",
-      "body": "Give your wallet a name if you like, then set a 4 digit PIN. You'll use it to unlock the app and sign transactions.",
-      "anchor": "4-name-it-and-set-your-pin",
+      "caption": "Name your wallet",
+      "body": "Give the wallet a name so you can tell it apart later. You can change it whenever you like.",
+      "anchor": "4-name-your-wallet",
       "src": {
-        "startSec": 16.3,
-        "endSec": 24.5
+        "startSec": 12,
+        "endSec": 13.5
       },
-      "videoAtSec": 26.73,
+      "videoAtSec": 24.27,
       "shots": [
         {
-          "atSec": 16.5,
-          "file": "/help/xrp-mobile/create-wallet/step-4-1.png",
-          "alt": "Name it and set your PIN, screen 1 of 2"
-        },
-        {
-          "atSec": 18.4,
-          "file": "/help/xrp-mobile/create-wallet/step-4-2.png",
-          "alt": "Name it and set your PIN, screen 2 of 2"
+          "atSec": 12.5,
+          "file": "/help/xrp-mobile/create-wallet/step-4.png",
+          "alt": "Name your wallet"
         }
       ]
     },
     {
       "n": 5,
-      "caption": "Wallet created",
-      "body": "And that's it, your XRPL account is ready. Tap Open wallet.",
-      "anchor": "5-wallet-created",
+      "caption": "Set a 4 digit PIN, twice",
+      "body": "Now set a 4 digit PIN and confirm it. You'll use it to unlock the app and to sign every transaction.",
+      "anchor": "5-set-a-4-digit-pin-twice",
       "src": {
-        "startSec": 24.5,
-        "endSec": 27.2
+        "startSec": 13.5,
+        "endSec": 22.4
       },
-      "videoAtSec": 33.83,
+      "videoAtSec": 29.07,
       "shots": [
         {
-          "atSec": 25.6,
+          "atSec": 15.2,
           "file": "/help/xrp-mobile/create-wallet/step-5.png",
-          "alt": "Wallet created"
+          "alt": "Set a 4 digit PIN, twice"
         }
       ]
     },
     {
       "n": 6,
-      "caption": "You're all set",
-      "body": "Allow notifications if you want to know when funds arrive, and welcome home: buy, send, receive and swap XRP, right from your pocket.",
-      "anchor": "6-youre-all-set",
+      "caption": "Notifications are your call",
+      "body": "Turn on notifications to stay on top of the latest updates, or skip it and decide later in settings.",
+      "anchor": "6-notifications-are-your-call",
       "src": {
-        "startSec": 27.2,
-        "endSec": 29.4
+        "startSec": 22.4,
+        "endSec": 23.5
       },
-      "videoAtSec": 37.73,
+      "videoAtSec": 35.83,
       "shots": [
         {
-          "atSec": 28.2,
-          "file": "/help/xrp-mobile/create-wallet/step-6-1.png",
-          "alt": "You're all set, screen 1 of 2"
-        },
+          "atSec": 22.9,
+          "file": "/help/xrp-mobile/create-wallet/step-6.png",
+          "alt": "Notifications are your call"
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "caption": "Wallet created",
+      "body": "And that's your XRP Ledger account ready. Tap Open wallet.",
+      "anchor": "7-wallet-created",
+      "src": {
+        "startSec": 23.5,
+        "endSec": 26
+      },
+      "videoAtSec": 42.13,
+      "shots": [
         {
-          "atSec": 30.6,
-          "file": "/help/xrp-mobile/create-wallet/step-6-2.png",
-          "alt": "You're all set, screen 2 of 2"
+          "atSec": 24.1,
+          "file": "/help/xrp-mobile/create-wallet/step-7.png",
+          "alt": "Wallet created"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "caption": "Enter your referral code",
+      "body": "Got a referral code? Type it in here to join the campaign.",
+      "anchor": "8-enter-your-referral-code",
+      "src": {
+        "startSec": 26,
+        "endSec": 27.5
+      },
+      "videoAtSec": 45.87,
+      "shots": [
+        {
+          "atSec": 26.5,
+          "file": "/help/xrp-mobile/create-wallet/step-8.png",
+          "alt": "Enter your referral code"
         }
       ]
     }

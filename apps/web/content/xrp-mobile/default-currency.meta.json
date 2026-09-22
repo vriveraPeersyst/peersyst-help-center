@@ -3,137 +3,119 @@
   "brandName": "XRP Mobile",
   "id": "default-currency",
   "title": "Change your default currency",
-  "description": "Quick XRP Mobile tutorial: change the app's default currency from Settings. The selector shows each currency's code, name and symbol, and search matches names too, so switching from euros to Japanese Yen takes seconds.",
-  "lede": "Prefer prices in yen, euros or dollars? Let's make XRP Mobile speak your currency.",
+  "description": "Quick XRP Mobile tutorial: change the app's default currency from Settings and watch every balance follow. The selector shows each currency's code, name and symbol, and the search matches names too, so switching takes seconds. Your holdings never change, only what they are priced in.",
+  "lede": "Tired of converting in your head every time you open your wallet? Put your own currency on the balance instead, and watch everything you hold follow it.",
   "video": {
     "src": "/help/xrp-mobile/default-currency/video.mp4",
     "poster": "/help/xrp-mobile/default-currency/poster.jpg",
-    "durationSec": 45.8
+    "durationSec": 47.5
   },
   "steps": [
     {
       "n": 1,
-      "caption": "Open XRP Mobile",
-      "body": "Open XRP Mobile. We start from a fresh wallet, and setup takes less than a minute.",
-      "anchor": "1-open-xrp-mobile",
+      "caption": "This wallet prices in dollars",
+      "body": "Here is a wallet holding XRP, Dogecoin and a stablecoin, and every one of them is priced in US dollars. Say dollars are not your money.",
+      "anchor": "1-this-wallet-prices-in-dollars",
       "src": {
         "startSec": 0,
-        "endSec": 11.3
+        "endSec": 1
       },
-      "videoAtSec": 5.97,
+      "videoAtSec": 0,
       "shots": [
         {
-          "atSec": 3.5,
+          "atSec": 0.2,
           "file": "/help/xrp-mobile/default-currency/step-1.png",
-          "alt": "Open XRP Mobile"
+          "alt": "This wallet prices in dollars"
         }
       ]
     },
     {
       "n": 2,
-      "caption": "Quick setup",
-      "body": "Create the wallet, name it, back up the recovery phrase and set your PIN.",
-      "anchor": "2-quick-setup",
+      "caption": "Open Settings",
+      "body": "Tap the gear. Everything that changes how the app looks to you lives under General, and the current currency is right there on the row.",
+      "anchor": "2-open-settings",
       "src": {
-        "startSec": 11.3,
-        "endSec": 26.4
+        "startSec": 1,
+        "endSec": 3.6
       },
-      "videoAtSec": 11.27,
+      "videoAtSec": 9.8,
       "shots": [
         {
-          "atSec": 18.4,
+          "atSec": 1.4,
           "file": "/help/xrp-mobile/default-currency/step-2.png",
-          "alt": "Quick setup"
+          "alt": "Open Settings"
         }
       ]
     },
     {
       "n": 3,
-      "caption": "Open your wallet",
-      "body": "Open your wallet, skip the notifications prompt, and you're on the home screen.",
-      "anchor": "3-open-your-wallet",
+      "caption": "Code, name and symbol",
+      "body": "Each row gives you the code, the name and the symbol, so there is no guessing between the dozens of currencies that share a dollar sign.",
+      "anchor": "3-code-name-and-symbol",
       "src": {
-        "startSec": 26.4,
-        "endSec": 31.5
+        "startSec": 3.6,
+        "endSec": 5.6
       },
-      "videoAtSec": 15.53,
+      "videoAtSec": 17.57,
       "shots": [
         {
-          "atSec": 28,
+          "atSec": 4.1,
           "file": "/help/xrp-mobile/default-currency/step-3.png",
-          "alt": "Open your wallet"
+          "alt": "Code, name and symbol"
         }
       ]
     },
     {
       "n": 4,
-      "caption": "Go to Settings",
-      "body": "Tap the gear to open Settings.",
-      "anchor": "4-go-to-settings",
+      "caption": "Search by name, not just code",
+      "body": "The search matches names too. Type yen instead of J P Y and it still finds it. Tap the one you want.",
+      "anchor": "4-search-by-name-not-just-code",
       "src": {
-        "startSec": 31.5,
-        "endSec": 33.8
+        "startSec": 5.6,
+        "endSec": 8
       },
-      "videoAtSec": 19.9,
+      "videoAtSec": 25.83,
       "shots": [
         {
-          "atSec": 31.9,
+          "atSec": 6.1,
           "file": "/help/xrp-mobile/default-currency/step-4.png",
-          "alt": "Go to Settings"
+          "alt": "Search by name, not just code"
         }
       ]
     },
     {
       "n": 5,
-      "caption": "Tap Default currency",
-      "body": "Under General, tap Default currency. Every entry shows its code, its name and its symbol, so you always know what you're picking.",
-      "anchor": "5-tap-default-currency",
+      "caption": "Back to the balance",
+      "body": "And this is the part worth seeing: go back to your wallet.",
+      "anchor": "5-back-to-the-balance",
       "src": {
-        "startSec": 33.8,
-        "endSec": 35.8
+        "startSec": 8,
+        "endSec": 9.5
       },
-      "videoAtSec": 21.8,
+      "videoAtSec": 32.87,
       "shots": [
         {
-          "atSec": 34.7,
+          "atSec": 8.5,
           "file": "/help/xrp-mobile/default-currency/step-5.png",
-          "alt": "Tap Default currency"
+          "alt": "Back to the balance"
         }
       ]
     },
     {
       "n": 6,
-      "caption": "Search by name",
-      "body": "Search works by name too. Type yen and Japanese Yen pops right up.",
-      "anchor": "6-search-by-name",
+      "caption": "Everything follows",
+      "body": "Same coins, same amounts, priced in yen. Your holdings never changed: three XRP is still three XRP. Only the money you read them in did.",
+      "anchor": "6-everything-follows",
       "src": {
-        "startSec": 35.8,
-        "endSec": 39.3
+        "startSec": 9.5,
+        "endSec": 10.5
       },
-      "videoAtSec": 30,
+      "videoAtSec": 36.13,
       "shots": [
         {
-          "atSec": 36.9,
+          "atSec": 9.7,
           "file": "/help/xrp-mobile/default-currency/step-6.png",
-          "alt": "Search by name"
-        }
-      ]
-    },
-    {
-      "n": 7,
-      "caption": "Done, prices in yen",
-      "body": "Tap it, and done. The whole app now shows prices in Japanese Yen. You can change it back anytime.",
-      "anchor": "7-done-prices-in-yen",
-      "src": {
-        "startSec": 39.3,
-        "endSec": 41.42
-      },
-      "videoAtSec": 33.8,
-      "shots": [
-        {
-          "atSec": 40.4,
-          "file": "/help/xrp-mobile/default-currency/step-7.png",
-          "alt": "Done, prices in yen"
+          "alt": "Everything follows"
         }
       ]
     }

@@ -1,0 +1,87 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "earn-notify",
+  "title": "Earn is on the way",
+  "description": "A short look at the Earn tab in XRP Mobile. There is no yield product yet: the tab shows what we are building towards, self custody yield with no lock ups, and the two pools we would start from, XRP and RLUSD. Nothing is confirmed and no rate is promised. Turn on the notification to hear about it first.",
+  "lede": "There is an Earn tab in XRP Mobile, and right now it earns you nothing. Here is why that is deliberate.",
+  "video": {
+    "src": "/help/xrp-mobile/earn-notify/video.mp4",
+    "poster": "/help/xrp-mobile/earn-notify/poster.jpg",
+    "durationSec": 28.6
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Open Earn",
+      "body": "Tap Earn. No rate, no launch date, no fine print, because there is no product yet.",
+      "anchor": "1-open-earn",
+      "src": {
+        "startSec": 0,
+        "endSec": 1.5
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 0.4,
+          "file": "/help/xrp-mobile/earn-notify/step-1.png",
+          "alt": "Open Earn"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "What we are aiming for",
+      "body": "Instead it says what we are building towards: XRP that works while it sits, keys that never leave your phone, and no lock ups.",
+      "anchor": "2-what-we-are-aiming-for",
+      "src": {
+        "startSec": 1.5,
+        "endSec": 3.2
+      },
+      "videoAtSec": 5.53,
+      "shots": [
+        {
+          "atSec": 1.8,
+          "file": "/help/xrp-mobile/earn-notify/step-2.png",
+          "alt": "What we are aiming for"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "Where we would start",
+      "body": "And where we would start: XRP first, then RLUSD for balances you would rather keep in dollars. Nothing confirmed, no rate promised.",
+      "anchor": "3-where-we-would-start",
+      "src": {
+        "startSec": 3.2,
+        "endSec": 5
+      },
+      "videoAtSec": 13.37,
+      "shots": [
+        {
+          "atSec": 3.7,
+          "file": "/help/xrp-mobile/earn-notify/step-3.png",
+          "alt": "Where we would start"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "Get told when it lands",
+      "body": "If you want to know the day it goes live, turn on the notification and forget about it.",
+      "anchor": "4-get-told-when-it-lands",
+      "src": {
+        "startSec": 5,
+        "endSec": 6.93
+      },
+      "videoAtSec": 23.2,
+      "shots": [
+        {
+          "atSec": 6,
+          "file": "/help/xrp-mobile/earn-notify/step-4.png",
+          "alt": "Get told when it lands"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "send-xrp",
+  "title": "Send XRP",
+  "description": "Short XRP Mobile tutorial: send XRP from a self custody wallet. Pick a recipient and watch the address validate as you type, enter an amount or use the percentage shortcuts, read what the recipient gets against the network fee, then sign with your PIN. Ends on the transaction hash, your receipt on the XRP Ledger. The one check the wallet cannot do for you: comparing the address against the person expecting the money.",
+  "lede": "You are about to move real money. Here is every check XRP Mobile makes before your XRP leaves, and the one check it cannot make for you.",
+  "video": {
+    "src": "/help/xrp-mobile/send-xrp/video.mp4",
+    "poster": "/help/xrp-mobile/send-xrp/poster.jpg",
+    "durationSec": 98.4
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Tap Send",
+      "body": "From the wallet home, tap Send. The sheet opens on XRP and tells you how much of it you can actually spend, which is your balance minus the reserve the ledger keeps.",
+      "anchor": "1-tap-send",
+      "src": {
+        "startSec": 0,
+        "endSec": 4.2
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 1.7,
+          "file": "/help/xrp-mobile/send-xrp/step-1.png",
+          "alt": "Tap Send"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "Choose the recipient",
+      "body": "Tap the address field. Recipients get a sheet of their own, so anyone you pay twice is one tap away the second time.",
+      "anchor": "2-choose-the-recipient",
+      "src": {
+        "startSec": 4.2,
+        "endSec": 5.6
+      },
+      "videoAtSec": 10.83,
+      "shots": [
+        {
+          "atSec": 4.8,
+          "file": "/help/xrp-mobile/send-xrp/step-2.png",
+          "alt": "Choose the recipient"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "Type or scan the address",
+      "body": "Type the address, or scan a QR with the button on the right. While it is incomplete the field stays red: the app is checking the address on every keystroke.",
+      "anchor": "3-type-or-scan-the-address",
+      "src": {
+        "startSec": 5.6,
+        "endSec": 8.6
+      },
+      "videoAtSec": 17.87,
+      "shots": [
+        {
+          "atSec": 6.3,
+          "file": "/help/xrp-mobile/send-xrp/step-3.png",
+          "alt": "Type or scan the address"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "Green means it checks out",
+      "body": "Green means the address is valid on the XRP Ledger. Valid is not the same as correct, so compare the first and last characters against whoever is expecting the money. That is the one check no wallet can do for you.",
+      "anchor": "4-green-means-it-checks-out",
+      "src": {
+        "startSec": 8.6,
+        "endSec": 12.3
+      },
+      "videoAtSec": 27.77,
+      "shots": [
+        {
+          "atSec": 9.4,
+          "file": "/help/xrp-mobile/send-xrp/step-4.png",
+          "alt": "Green means it checks out"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "caption": "Enter the amount",
+      "body": "Now the amount. One XRP here, typed on the pad, or take a shortcut: a quarter, half, three quarters, or the maximum you can spend.",
+      "anchor": "5-enter-the-amount",
+      "src": {
+        "startSec": 12.3,
+        "endSec": 16.4
+      },
+      "videoAtSec": 41.33,
+      "shots": [
+        {
+          "atSec": 13.3,
+          "file": "/help/xrp-mobile/send-xrp/step-5.png",
+          "alt": "Enter the amount"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "caption": "Recipient gets, and the fee",
+      "body": "Two numbers to read before you go on: what the recipient actually gets, and the network fee. On the XRP Ledger that fee is a hundredth of a cent.",
+      "anchor": "6-recipient-gets-and-the-fee",
+      "src": {
+        "startSec": 16.4,
+        "endSec": 18.3
+      },
+      "videoAtSec": 51.63,
+      "shots": [
+        {
+          "atSec": 17.1,
+          "file": "/help/xrp-mobile/send-xrp/step-6.png",
+          "alt": "Recipient gets, and the fee"
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "caption": "Read the summary",
+      "body": "The summary is your last look before it is irreversible: which wallet it leaves, where it lands, the chain it settles on, and the amount in your own currency.",
+      "anchor": "7-read-the-summary",
+      "src": {
+        "startSec": 18.3,
+        "endSec": 21
+      },
+      "videoAtSec": 61.13,
+      "shots": [
+        {
+          "atSec": 19,
+          "file": "/help/xrp-mobile/send-xrp/step-7.png",
+          "alt": "Read the summary"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "caption": "Sign with your PIN",
+      "body": "Confirm and send asks for your PIN. Your keys never leave the phone: the PIN is what unlocks them to sign this one payment.",
+      "anchor": "8-sign-with-your-pin",
+      "src": {
+        "startSec": 21,
+        "endSec": 25.5
+      },
+      "videoAtSec": 71.07,
+      "shots": [
+        {
+          "atSec": 22.1,
+          "file": "/help/xrp-mobile/send-xrp/step-8.png",
+          "alt": "Sign with your PIN"
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "caption": "The ledger settles it",
+      "body": "The XRP Ledger closes a new ledger every three to five seconds, so the wait is short, and there is no pending state to babysit.",
+      "anchor": "9-the-ledger-settles-it",
+      "src": {
+        "startSec": 25.5,
+        "endSec": 41
+      },
+      "videoAtSec": 78.8,
+      "shots": [
+        {
+          "atSec": 29.2,
+          "file": "/help/xrp-mobile/send-xrp/step-9.png",
+          "alt": "The ledger settles it"
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "caption": "Sent, with a receipt",
+      "body": "Done, and your balance already reflects it. That long string is the transaction hash: your receipt. Open it in the explorer, or send it to whoever is waiting.",
+      "anchor": "10-sent-with-a-receipt",
+      "src": {
+        "startSec": 41,
+        "endSec": 43.8
+      },
+      "videoAtSec": 86.93,
+      "shots": [
+        {
+          "atSec": 41.7,
+          "file": "/help/xrp-mobile/send-xrp/step-10.png",
+          "alt": "Sent, with a receipt"
+        }
+      ]
+    }
+  ]
+}

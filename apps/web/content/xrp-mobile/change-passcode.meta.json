@@ -1,0 +1,123 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "change-passcode",
+  "title": "Change your PIN",
+  "description": "Short XRP Mobile tutorial: change your wallet PIN from Settings, Security. The app asks for your current PIN before it lets you set a new one, so nobody holding your unlocked phone can change it blind. The new PIN unlocks the app and signs every transaction from then on.",
+  "lede": "If anyone has seen you type your PIN, change it. It takes about twenty seconds, and the app makes sure it is really you first.",
+  "video": {
+    "src": "/help/xrp-mobile/change-passcode/video.mp4",
+    "poster": "/help/xrp-mobile/change-passcode/poster.jpg",
+    "durationSec": 33.7
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Settings, then Security",
+      "body": "Open the gear and move to the Security tab. This is where the PIN, your backup and deleting your data all live.",
+      "anchor": "1-settings-then-security",
+      "src": {
+        "startSec": 0,
+        "endSec": 3
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 1.3,
+          "file": "/help/xrp-mobile/change-passcode/step-1.png",
+          "alt": "Settings, then Security"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "Tap Change passcode",
+      "body": "Tap Change passcode.",
+      "anchor": "2-tap-change-passcode",
+      "src": {
+        "startSec": 3,
+        "endSec": 4
+      },
+      "videoAtSec": 7,
+      "shots": [
+        {
+          "atSec": 3.1,
+          "file": "/help/xrp-mobile/change-passcode/step-2.png",
+          "alt": "Tap Change passcode"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "Prove it is you first",
+      "body": "It asks for the PIN you have now before it lets you set a new one. Someone holding your unlocked phone still cannot change it blind.",
+      "anchor": "3-prove-it-is-you-first",
+      "src": {
+        "startSec": 4,
+        "endSec": 9
+      },
+      "videoAtSec": 8.63,
+      "shots": [
+        {
+          "atSec": 5.2,
+          "file": "/help/xrp-mobile/change-passcode/step-3.png",
+          "alt": "Prove it is you first"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "Enter the new PIN",
+      "body": "Now the new one. Four digits, and please not your year of birth or the code to your front door.",
+      "anchor": "4-enter-the-new-pin",
+      "src": {
+        "startSec": 9,
+        "endSec": 14
+      },
+      "videoAtSec": 16.53,
+      "shots": [
+        {
+          "atSec": 10.2,
+          "file": "/help/xrp-mobile/change-passcode/step-4.png",
+          "alt": "Enter the new PIN"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "caption": "Confirm it",
+      "body": "Type it again to confirm. If the two do not match, nothing changes and you start over.",
+      "anchor": "5-confirm-it",
+      "src": {
+        "startSec": 14,
+        "endSec": 18.5
+      },
+      "videoAtSec": 22.97,
+      "shots": [
+        {
+          "atSec": 15.1,
+          "file": "/help/xrp-mobile/change-passcode/step-5.png",
+          "alt": "Confirm it"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "caption": "Changed",
+      "body": "Changed. The new PIN unlocks the app and signs your transactions from now on.",
+      "anchor": "6-changed",
+      "src": {
+        "startSec": 18.5,
+        "endSec": 19.77
+      },
+      "videoAtSec": 27.97,
+      "shots": [
+        {
+          "atSec": 18.9,
+          "file": "/help/xrp-mobile/change-passcode/step-6.png",
+          "alt": "Changed"
+        }
+      ]
+    }
+  ]
+}

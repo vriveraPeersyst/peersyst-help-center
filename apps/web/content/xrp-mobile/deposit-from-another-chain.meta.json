@@ -1,0 +1,105 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "deposit-from-another-chain",
+  "title": "Deposit from another chain",
+  "description": "Short XRP Mobile tutorial: bring an asset in from another blockchain. Pick what you are depositing, pick the network it is coming from, and read the deposit address the wallet generates for that exact pair. Why the same USDC needs a different address on Base than on Solana, what happens if you send the wrong token or use the wrong network, and why you should check the address every time instead of reusing a saved one.",
+  "lede": "Your USDC is sitting on Base, or Solana, or Ethereum, and your wallet lives on the XRP Ledger. Here is how to bring it across, and the one mistake that loses it.",
+  "video": {
+    "src": "/help/xrp-mobile/deposit-from-another-chain/video.mp4",
+    "poster": "/help/xrp-mobile/deposit-from-another-chain/poster.jpg",
+    "durationSec": 52.2
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Tap Receive",
+      "body": "It starts where any deposit starts: Receive, on the wallet home.",
+      "anchor": "1-tap-receive",
+      "src": {
+        "startSec": 0,
+        "endSec": 1.6
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 0.4,
+          "file": "/help/xrp-mobile/deposit-from-another-chain/step-1.png",
+          "alt": "Tap Receive"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "Pick the asset",
+      "body": "The wallet holds more than XRP. Bitcoin, Ether, the stablecoins, Solana: pick the one that is coming in.",
+      "anchor": "2-pick-the-asset",
+      "src": {
+        "startSec": 1.6,
+        "endSec": 2.6
+      },
+      "videoAtSec": 4.27,
+      "shots": [
+        {
+          "atSec": 1.8,
+          "file": "/help/xrp-mobile/deposit-from-another-chain/step-2.png",
+          "alt": "Pick the asset"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "Pick the network",
+      "body": "Then the network it is coming from, and this is the part that matters. The same USDC exists on Ethereum, Arbitrum, Base, Solana and half a dozen others, and each one needs a different deposit address.",
+      "anchor": "3-pick-the-network",
+      "src": {
+        "startSec": 2.6,
+        "endSec": 4.2
+      },
+      "videoAtSec": 11.77,
+      "shots": [
+        {
+          "atSec": 3.2,
+          "file": "/help/xrp-mobile/deposit-from-another-chain/step-3.png",
+          "alt": "Pick the network"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "One asset, one network",
+      "body": "So read the warning. This address takes USDC on Base and nothing else. Send another token, or the right token on the wrong network, and it is gone: nobody can reverse it and nobody can recover it.",
+      "anchor": "4-one-asset-one-network",
+      "src": {
+        "startSec": 4.2,
+        "endSec": 5.1
+      },
+      "videoAtSec": 26.07,
+      "shots": [
+        {
+          "atSec": 4.6,
+          "file": "/help/xrp-mobile/deposit-from-another-chain/step-4.png",
+          "alt": "One asset, one network"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "caption": "Your deposit address",
+      "body": "Copy the address or show the QR, and check it every single time. It is generated for this asset and this network, and it can change between deposits, so never reuse one you saved last month.",
+      "anchor": "5-your-deposit-address",
+      "src": {
+        "startSec": 5.1,
+        "endSec": 5.9
+      },
+      "videoAtSec": 39.3,
+      "shots": [
+        {
+          "atSec": 5.3,
+          "file": "/help/xrp-mobile/deposit-from-another-chain/step-5.png",
+          "alt": "Your deposit address"
+        }
+      ]
+    }
+  ]
+}

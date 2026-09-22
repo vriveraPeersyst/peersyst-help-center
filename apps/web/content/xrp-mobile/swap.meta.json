@@ -1,0 +1,159 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "swap",
+  "title": "Swap XRP for USDC",
+  "description": "Short XRP Mobile tutorial: swap XRP for USDC from a self custody wallet, with no exchange account. Where the minimum comes from, how to read the live quote, what the two fees actually are, what max slippage protects you from, and why a swap takes half a minute when an XRP payment takes four seconds: it is routed through NEAR Intents and crosses two networks, so it settles with two hashes instead of one.",
+  "lede": "Turn XRP into a dollar stablecoin without an exchange account, without signing up anywhere. Here is how the swap works, and exactly what it costs.",
+  "video": {
+    "src": "/help/xrp-mobile/swap/video.mp4",
+    "poster": "/help/xrp-mobile/swap/poster.jpg",
+    "durationSec": 92.2
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Tap Swap",
+      "body": "From the wallet home, tap Swap. You pick what you are paying with on top and what you want underneath: XRP for USDC here, and the arrows in the middle flip the pair.",
+      "anchor": "1-tap-swap",
+      "src": {
+        "startSec": 0,
+        "endSec": 2.6
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 0.4,
+          "file": "/help/xrp-mobile/swap/step-1.png",
+          "alt": "Tap Swap"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "Type the amount",
+      "body": "Type what you want to swap, or take a percentage of your balance. The provider sets a minimum, two XRP at the time of recording, and the field tells you when you are under it.",
+      "anchor": "2-type-the-amount",
+      "src": {
+        "startSec": 2.6,
+        "endSec": 5.7
+      },
+      "videoAtSec": 11.37,
+      "shots": [
+        {
+          "atSec": 3.4,
+          "file": "/help/xrp-mobile/swap/step-2.png",
+          "alt": "Type the amount"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "Read the quote",
+      "body": "The quote fills in as you type: what you get, in USDC and in your own currency, and the rate it is based on. It is a live quote, not a promise, which is why it refreshes.",
+      "anchor": "3-read-the-quote",
+      "src": {
+        "startSec": 5.7,
+        "endSec": 7.6
+      },
+      "videoAtSec": 22.47,
+      "shots": [
+        {
+          "atSec": 6.4,
+          "file": "/help/xrp-mobile/swap/step-3.png",
+          "alt": "Read the quote"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "Check the terms",
+      "body": "The second step is where the real cost is. Two fees: the network fee, a hundredth of a cent, and the provider's, nought point eight eight percent. Max slippage of one percent is the worst rate you accept: if the market moves further than that while it settles, the swap fails instead of filling badly.",
+      "anchor": "4-check-the-terms",
+      "src": {
+        "startSec": 7.6,
+        "endSec": 11
+      },
+      "videoAtSec": 34.17,
+      "shots": [
+        {
+          "atSec": 8.3,
+          "file": "/help/xrp-mobile/swap/step-4.png",
+          "alt": "Check the terms"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "caption": "Sign with your PIN",
+      "body": "Confirm and swap, then your PIN. Your keys sign this on the phone, the same as any payment.",
+      "anchor": "5-sign-with-your-pin",
+      "src": {
+        "startSec": 11,
+        "endSec": 14.4
+      },
+      "videoAtSec": 55,
+      "shots": [
+        {
+          "atSec": 11.8,
+          "file": "/help/xrp-mobile/swap/step-5.png",
+          "alt": "Sign with your PIN"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "caption": "It crosses two networks",
+      "body": "This is not a trade on the XRP Ledger. Your XRP leaves the ledger and the swap is routed through NEAR Intents, which is why it takes half a minute instead of four seconds.",
+      "anchor": "6-it-crosses-two-networks",
+      "src": {
+        "startSec": 14.4,
+        "endSec": 27.8
+      },
+      "videoAtSec": 61.03,
+      "shots": [
+        {
+          "atSec": 17.6,
+          "file": "/help/xrp-mobile/swap/step-6.png",
+          "alt": "It crosses two networks"
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "caption": "Two hashes, both pending",
+      "body": "The screen shows both legs while they settle: the intents hash and the NEAR transactions. Pending means it is still moving, not that it is stuck. Leaving the app does not cancel it.",
+      "anchor": "7-two-hashes-both-pending",
+      "src": {
+        "startSec": 27.8,
+        "endSec": 41.7
+      },
+      "videoAtSec": 71.7,
+      "shots": [
+        {
+          "atSec": 31.2,
+          "file": "/help/xrp-mobile/swap/step-7.png",
+          "alt": "Two hashes, both pending"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "caption": "Swapped",
+      "body": "Done. The hashes are now real, and your USDC balance is on the wallet home. Go again if you want to swap the rest.",
+      "anchor": "8-swapped",
+      "src": {
+        "startSec": 41.7,
+        "endSec": 43.8
+      },
+      "videoAtSec": 83.93,
+      "shots": [
+        {
+          "atSec": 42.4,
+          "file": "/help/xrp-mobile/swap/step-8.png",
+          "alt": "Swapped"
+        }
+      ]
+    }
+  ]
+}

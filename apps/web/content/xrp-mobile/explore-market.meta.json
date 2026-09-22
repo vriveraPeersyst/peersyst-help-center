@@ -1,0 +1,87 @@
+{
+  "brandId": "xrp-mobile",
+  "brandName": "XRP Mobile",
+  "id": "explore-market",
+  "title": "Find any token in Explore",
+  "description": "Short XRP Mobile tutorial: use the Explore tab as your market screen. See the day's biggest gainers and losers, browse every listed token with live prices, search by name or symbol, and open any token for its own page and chart. No account needed to look.",
+  "lede": "Before you buy anything, look at what is actually moving. The Explore tab is the market, inside your wallet.",
+  "video": {
+    "src": "/help/xrp-mobile/explore-market/video.mp4",
+    "poster": "/help/xrp-mobile/explore-market/poster.jpg",
+    "durationSec": 25.8
+  },
+  "steps": [
+    {
+      "n": 1,
+      "caption": "Open Explore",
+      "body": "Tap Explore. No account, no sign up: this is just the market, and you can read it all day without owning anything.",
+      "anchor": "1-open-explore",
+      "src": {
+        "startSec": 0,
+        "endSec": 1.6
+      },
+      "videoAtSec": 0,
+      "shots": [
+        {
+          "atSec": 0.4,
+          "file": "/help/xrp-mobile/explore-market/step-1.png",
+          "alt": "Open Explore"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "caption": "Top movers first",
+      "body": "Top movers opens with the biggest gainers and losers of the last 24 hours, which is usually the only question anyone actually has.",
+      "anchor": "2-top-movers-first",
+      "src": {
+        "startSec": 1.6,
+        "endSec": 3.4
+      },
+      "videoAtSec": 7.1,
+      "shots": [
+        {
+          "atSec": 2.4,
+          "file": "/help/xrp-mobile/explore-market/step-2.png",
+          "alt": "Top movers first"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "caption": "Then every token",
+      "body": "Under it sits every token the app lists, with its price and its move on the day.",
+      "anchor": "3-then-every-token",
+      "src": {
+        "startSec": 3.4,
+        "endSec": 5.6
+      },
+      "videoAtSec": 15.03,
+      "shots": [
+        {
+          "atSec": 4.7,
+          "file": "/help/xrp-mobile/explore-market/step-3.png",
+          "alt": "Then every token"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "Keep going",
+      "body": "Keep scrolling, or search by name or symbol, and tap any token for its own page and chart.",
+      "anchor": "4-keep-going",
+      "src": {
+        "startSec": 5.6,
+        "endSec": 8
+      },
+      "videoAtSec": 19.77,
+      "shots": [
+        {
+          "atSec": 7,
+          "file": "/help/xrp-mobile/explore-market/step-4.png",
+          "alt": "Keep going"
+        }
+      ]
+    }
+  ]
+}

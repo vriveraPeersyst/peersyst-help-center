@@ -4,32 +4,146 @@
     {
       "id": "create-wallet",
       "title": "Create your XRP wallet",
-      "description": "In this quick XRP Mobile walkthrough you'll create a self custody XRP wallet on the XRP Ledger, back up your recovery phrase and set a PIN. XRP Mobile is a noncustodial wallet where you can buy, send, receive and swap XRP. Perfect if you're getting started with XRP or self custody.",
-      "steps": 6
+      "description": "In this quick XRP Mobile walkthrough you'll create a self custody XRP wallet on the XRP Ledger, save your recovery phrase, set a PIN and enter a referral code. XRP Mobile is a noncustodial wallet where you can buy, send, receive and swap XRP. Perfect if you're getting started with XRP or self custody.",
+      "steps": 8
     },
     {
       "id": "receive",
       "title": "Receive XRP",
-      "description": "Learn how to receive XRP in XRP Mobile: open Receive, pick XRP, and share your deposit address or QR code. We also cover the XRP Ledger network warning and the 1 XRP minimum that activates a new account.",
-      "steps": 6
+      "description": "A short XRP Mobile walkthrough: open Receive, pick XRP, and share your deposit address or QR code. We cover the XRP Ledger network warning that catches people out, and the 1 XRP minimum that a brand new XRPL account needs before it exists on the ledger. XRP Mobile is a self custody wallet where you can buy, send, receive and swap XRP.",
+      "steps": 5
     },
     {
       "id": "default-currency",
       "title": "Change your default currency",
-      "description": "Quick XRP Mobile tutorial: change the app's default currency from Settings. The selector shows each currency's code, name and symbol, and search matches names too, so switching from euros to Japanese Yen takes seconds.",
-      "steps": 7
+      "description": "Quick XRP Mobile tutorial: change the app's default currency from Settings and watch every balance follow. The selector shows each currency's code, name and symbol, and the search matches names too, so switching takes seconds. Your holdings never change, only what they are priced in.",
+      "steps": 6
     },
     {
       "id": "import-secret-numbers",
-      "title": "Import your Xaman account",
-      "description": "Step by step: import an existing XRP Ledger account into XRP Mobile using the 8 rows of Xaman secret numbers, set a PIN, and fund the address with the 1 XRP an account needs to activate on the ledger. Same address, same balance, and the keys stay on your phone. Never share your secret numbers with anyone.",
+      "title": "Import your Xaman account with secret numbers",
+      "description": "Step by step XRP Mobile tutorial: import an existing XRP Ledger account using the 8 rows of secret numbers that Xaman gives you as a backup. Type the rows in order, watch each one validate its own checksum, set a device PIN, and the account comes back with the same address and balance. Never share your secret numbers with anyone.",
+      "steps": 6
+    },
+    {
+      "id": "getting-started-tour",
+      "title": "Your first minute in XRP Mobile",
+      "description": "Just installed XRP Mobile? This short tour walks through every tab: the Wallet home with buy, send, receive and swap, the Earn roadmap, the Explore market, the Share referral campaign, and the settings behind the gear. A good first watch before any other tutorial.",
+      "steps": 6
+    },
+    {
+      "id": "app-language",
+      "title": "Switch the app language",
+      "description": "Short XRP Mobile tutorial: change the app language from Settings. XRP Mobile ships fully translated in 13 languages, and the switch is instant. Your wallet, your keys and your balances are untouched.",
+      "steps": 4
+    },
+    {
+      "id": "change-passcode",
+      "title": "Change your PIN",
+      "description": "Short XRP Mobile tutorial: change your wallet PIN from Settings, Security. The app asks for your current PIN before it lets you set a new one, so nobody holding your unlocked phone can change it blind. The new PIN unlocks the app and signs every transaction from then on.",
+      "steps": 6
+    },
+    {
+      "id": "explore-market",
+      "title": "Find any token in Explore",
+      "description": "Short XRP Mobile tutorial: use the Explore tab as your market screen. See the day's biggest gainers and losers, browse every listed token with live prices, search by name or symbol, and open any token for its own page and chart. No account needed to look.",
+      "steps": 4
+    },
+    {
+      "id": "earn-notify",
+      "title": "Earn is on the way",
+      "description": "A short look at the Earn tab in XRP Mobile. There is no yield product yet: the tab shows what we are building towards, self custody yield with no lock ups, and the two pools we would start from, XRP and RLUSD. Nothing is confirmed and no rate is promised. Turn on the notification to hear about it first.",
+      "steps": 4
+    },
+    {
+      "id": "add-second-wallet",
+      "title": "Add a second wallet",
+      "description": "Short XRP Mobile tutorial: add another wallet from the home carousel. Create a brand new one or import an existing one, keep balances separate, and switch between them with a swipe. Creating an extra wallet is the one place the app lets you choose between a 12 word recovery phrase and 8 rows of secret numbers.",
+      "steps": 3
+    },
+    {
+      "id": "token-research",
+      "title": "Look a token up before you buy it",
+      "description": "Short XRP Mobile tutorial: open any token's page from the Explore market. Read its chart from one day to all time, then the numbers that matter, market cap, 24 hour volume and total supply, plus links to the project's website and whitepaper. Not financial advice, just where to look.",
+      "steps": 4
+    },
+    {
+      "id": "get-support",
+      "title": "Get help from a human",
+      "description": "Short XRP Mobile tutorial: find help from the Support tab. Start a chat with the team, or read the built in FAQ that covers the questions we get most, why 1 XRP is locked in your wallet, how swaps work, where multichain tokens are held, and why a deposit can take a few minutes. Nobody from XRP Mobile will ever ask for your recovery phrase.",
+      "steps": 4
+    },
+    {
+      "id": "delete-data",
+      "title": "Wipe XRP Mobile from this phone",
+      "description": "Short XRP Mobile tutorial: remove your wallet from a device with Delete data, in Settings under Security. It wipes the wallets, keys and PIN from that phone. Your funds are untouched because they live on the XRP Ledger, not on the device, but without your recovery phrase nobody can restore the account afterwards.",
+      "steps": 3
+    },
+    {
+      "id": "import-mnemonic",
+      "title": "Import a wallet with your recovery phrase",
+      "description": "Step by step XRP Mobile tutorial: import an existing XRP Ledger wallet using its 12 word recovery phrase. Type the words in order or paste them, name the wallet, set a device PIN, and your account comes back with the same address and the same balance. The keys stay on your phone, and the PIN is local to the device.",
+      "steps": 5
+    },
+    {
+      "id": "backup-your-wallets",
+      "title": "Back up your wallet the right way",
+      "description": "Step by step XRP Mobile tutorial: back up your wallet from Settings, Security. Pick the wallet, choose the recovery phrase over the private key, pass the three question quiz, confirm with your PIN, and write the 12 words down on paper. Nobody from XRP Mobile will ever ask you for them.",
+      "steps": 7
+    },
+    {
+      "id": "biometrics",
+      "title": "Unlock with Face ID",
+      "description": "Short XRP Mobile tutorial: enable biometric authentication from Settings, Security, and open your wallet with Face ID instead of a PIN. The app locks as soon as it leaves the screen, iOS answers the biometric check itself so no face data ever reaches XRP Mobile, and your PIN still works as a fallback.",
+      "steps": 5
+    },
+    {
+      "id": "notifications",
+      "title": "Turn notifications on after saying no",
+      "description": "Short XRP Mobile tutorial: turn notifications on from Settings, General, after skipping them during setup. The switch hands over to iOS, which only asks for this permission once per install, so if you denied it long ago you have to allow it from the phone's own settings instead.",
+      "steps": 6
+    },
+    {
+      "id": "buy-xrp",
+      "title": "Buy XRP with a card",
+      "description": "Short XRP Mobile tutorial: buy XRP with a credit or debit card. Pick an amount, watch the live quote update, and read the full breakdown before committing: the rate, the provider's fee, how much XRP actually reaches your wallet, and how long it takes. The card details are entered with the third party provider, never inside the wallet.",
+      "steps": 5
+    },
+    {
+      "id": "send-xrp",
+      "title": "Send XRP",
+      "description": "Short XRP Mobile tutorial: send XRP from a self custody wallet. Pick a recipient and watch the address validate as you type, enter an amount or use the percentage shortcuts, read what the recipient gets against the network fee, then sign with your PIN. Ends on the transaction hash, your receipt on the XRP Ledger. The one check the wallet cannot do for you: comparing the address against the person expecting the money.",
+      "steps": 10
+    },
+    {
+      "id": "send-destination-tag",
+      "title": "Send with a destination tag",
+      "description": "Short XRP Mobile tutorial: send XRP with a destination tag. What a destination tag actually is, why exchanges need one when personal wallets do not, where to find yours on the exchange's deposit page, and what the transaction looks like once the tag rides along with it. Ends with the transaction hash, the one thing support will ask for if a deposit goes missing.",
+      "steps": 12
+    },
+    {
+      "id": "activity-history",
+      "title": "Read your activity",
+      "description": "Short XRP Mobile tutorial: read your transaction history. Switch the wallet home from balances to activity, find any payment sent or received, and open its receipt: counterparty, network fee, date, status and the transaction hash you can check on a public XRP Ledger explorer. Also, what those tiny incoming amounts you never asked for are, and why you should ignore them.",
+      "steps": 5
+    },
+    {
+      "id": "swap",
+      "title": "Swap XRP for USDC",
+      "description": "Short XRP Mobile tutorial: swap XRP for USDC from a self custody wallet, with no exchange account. Where the minimum comes from, how to read the live quote, what the two fees actually are, what max slippage protects you from, and why a swap takes half a minute when an XRP payment takes four seconds: it is routed through NEAR Intents and crosses two networks, so it settles with two hashes instead of one.",
       "steps": 8
     },
     {
-      "id": "activate-account",
-      "title": "Activate your XRP account",
-      "description": "Every new XRP Ledger account needs 1 XRP before the ledger will hold it. In this XRP Mobile walkthrough you'll see where the activation card comes from, what the base reserve actually is, how to find your deposit address on the right network, and what changes the moment the funds land. Not financial advice.",
-      "steps": 6
+      "id": "deposit-from-another-chain",
+      "title": "Deposit from another chain",
+      "description": "Short XRP Mobile tutorial: bring an asset in from another blockchain. Pick what you are depositing, pick the network it is coming from, and read the deposit address the wallet generates for that exact pair. Why the same USDC needs a different address on Base than on Solana, what happens if you send the wrong token or use the wrong network, and why you should check the address every time instead of reusing a saved one.",
+      "steps": 5
+    },
+    {
+      "id": "send-cross-chain",
+      "title": "Send to another chain",
+      "description": "Short XRP Mobile tutorial: send a multichain asset out to another blockchain. Choosing USDC turns the recipient row into a network picker, the address field changes to the format that chain expects, and the summary shows what the recipient actually receives after the routing cost. The transfer settles in three legs, each with its own hash, which is why it takes longer than a payment on the XRP Ledger. Includes the warning about sending to exchanges from a third party.",
+      "steps": 12
     }
   ]
 }

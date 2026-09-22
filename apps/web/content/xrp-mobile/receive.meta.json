@@ -3,119 +3,101 @@
   "brandName": "XRP Mobile",
   "id": "receive",
   "title": "Receive XRP",
-  "description": "Learn how to receive XRP in XRP Mobile: open Receive, pick XRP, and share your deposit address or QR code. We also cover the XRP Ledger network warning and the 1 XRP minimum that activates a new account.",
-  "lede": "Need your XRP deposit address? Here's the safe way to find it, in seconds.",
+  "description": "A short XRP Mobile walkthrough: open Receive, pick XRP, and share your deposit address or QR code. We cover the XRP Ledger network warning that catches people out, and the 1 XRP minimum that a brand new XRPL account needs before it exists on the ledger. XRP Mobile is a self custody wallet where you can buy, send, receive and swap XRP.",
+  "lede": "Someone owes you XRP. Here is exactly where to tell them to send it, and the two things that go wrong if you get it wrong.",
   "video": {
     "src": "/help/xrp-mobile/receive/video.mp4",
     "poster": "/help/xrp-mobile/receive/poster.jpg",
-    "durationSec": 54.3
+    "durationSec": 47.3
   },
   "steps": [
     {
       "n": 1,
-      "caption": "Open XRP Mobile",
-      "body": "First, open XRP Mobile. For this demo we create a brand new wallet. If you already have one, you'll start from the home screen.",
-      "anchor": "1-open-xrp-mobile",
+      "caption": "Tap Receive",
+      "body": "From the wallet home, tap Receive. Nothing here costs anything: an address is just where funds land.",
+      "anchor": "1-tap-receive",
       "src": {
         "startSec": 0,
-        "endSec": 11.5
+        "endSec": 1.5
       },
-      "videoAtSec": 5.07,
+      "videoAtSec": 0,
       "shots": [
         {
-          "atSec": 6.2,
+          "atSec": 0.4,
           "file": "/help/xrp-mobile/receive/step-1.png",
-          "alt": "Open XRP Mobile"
-        }
-      ]
-    },
-    {
-      "n": 2,
-      "caption": "Quick setup",
-      "body": "Name it, back up the recovery phrase and set a PIN. The wallet is ready in seconds.",
-      "anchor": "2-quick-setup",
-      "src": {
-        "startSec": 11.5,
-        "endSec": 26.8
-      },
-      "videoAtSec": 13.63,
-      "shots": [
-        {
-          "atSec": 18.9,
-          "file": "/help/xrp-mobile/receive/step-2.png",
-          "alt": "Quick setup"
-        }
-      ]
-    },
-    {
-      "n": 3,
-      "caption": "Open your wallet",
-      "body": "Open your wallet, skip the notifications prompt for now, and you land on home.",
-      "anchor": "3-open-your-wallet",
-      "src": {
-        "startSec": 26.8,
-        "endSec": 31.5
-      },
-      "videoAtSec": 18.9,
-      "shots": [
-        {
-          "atSec": 29,
-          "file": "/help/xrp-mobile/receive/step-3.png",
-          "alt": "Open your wallet"
-        }
-      ]
-    },
-    {
-      "n": 4,
-      "caption": "Tap Receive",
-      "body": "Now tap Receive. XRP Mobile asks which asset you want to receive.",
-      "anchor": "4-tap-receive",
-      "src": {
-        "startSec": 31.5,
-        "endSec": 35
-      },
-      "videoAtSec": 23.67,
-      "shots": [
-        {
-          "atSec": 32.9,
-          "file": "/help/xrp-mobile/receive/step-4.png",
           "alt": "Tap Receive"
         }
       ]
     },
     {
-      "n": 5,
-      "caption": "Search your asset",
-      "body": "Type to search. Type xrp and the list narrows to exactly what we need.",
-      "anchor": "5-search-your-asset",
+      "n": 2,
+      "caption": "Pick the asset",
+      "body": "Pick the asset you're expecting. XRP Mobile holds more than XRP, and every asset has its own deposit address, so choosing the right one matters.",
+      "anchor": "2-pick-the-asset",
       "src": {
-        "startSec": 35,
-        "endSec": 39.5
+        "startSec": 1.5,
+        "endSec": 3.4
       },
-      "videoAtSec": 28.67,
+      "videoAtSec": 6.47,
       "shots": [
         {
-          "atSec": 36.9,
-          "file": "/help/xrp-mobile/receive/step-5.png",
-          "alt": "Search your asset"
+          "atSec": 1.9,
+          "file": "/help/xrp-mobile/receive/step-2.png",
+          "alt": "Pick the asset"
         }
       ]
     },
     {
-      "n": 6,
-      "caption": "Your deposit address",
-      "body": "And here it is: your QR code and deposit address. Only send XRP over the XRP Ledger network, and mind the 1 XRP minimum that activates a new account. Tap the copy icon and share it safely.",
-      "anchor": "6-your-deposit-address",
+      "n": 3,
+      "caption": "One asset, one network",
+      "body": "Read the warning. This address takes XRP on the XRP Ledger and nothing else. Anything sent on another network is gone, and no one can get it back.",
+      "anchor": "3-one-asset-one-network",
       "src": {
-        "startSec": 39.5,
-        "endSec": 42.12
+        "startSec": 3.4,
+        "endSec": 3.8
       },
-      "videoAtSec": 34.03,
+      "videoAtSec": 16,
       "shots": [
         {
-          "atSec": 40.9,
-          "file": "/help/xrp-mobile/receive/step-6.png",
-          "alt": "Your deposit address"
+          "atSec": 3.5,
+          "file": "/help/xrp-mobile/receive/step-3.png",
+          "alt": "One asset, one network"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "caption": "Your address and QR",
+      "body": "Here is your address, with a QR for anyone standing next to you. Copy it or share it, and always check the first and last characters against what the sender typed.",
+      "anchor": "4-your-address-and-qr",
+      "src": {
+        "startSec": 3.8,
+        "endSec": 4.2
+      },
+      "videoAtSec": 26.4,
+      "shots": [
+        {
+          "atSec": 3.9,
+          "file": "/help/xrp-mobile/receive/step-4.png",
+          "alt": "Your address and QR"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "caption": "At least 1 XRP the first time",
+      "body": "One catch on a brand new account: the first deposit has to be at least 1 XRP. That is the reserve the XRP Ledger asks for to let your account exist.",
+      "anchor": "5-at-least-1-xrp-the-first-time",
+      "src": {
+        "startSec": 4.2,
+        "endSec": 4.6
+      },
+      "videoAtSec": 36.5,
+      "shots": [
+        {
+          "atSec": 4.3,
+          "file": "/help/xrp-mobile/receive/step-5.png",
+          "alt": "At least 1 XRP the first time"
         }
       ]
     }
