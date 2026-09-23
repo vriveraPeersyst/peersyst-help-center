@@ -48,6 +48,15 @@ A swap, a send to another chain or a deposit from another chain is routed throug
 - Deposit received, no settlement for more than 30 minutes: escalate to the team with the intents hash. Swaps that cannot complete are refunded to the origin wallet in the asset that was paid.
 - Withdrawal leg completed: the funds are on the destination network. If the app does not show them, it is stale: pull to refresh, or escalate as a display issue.
 
+## Escalating to NEAR Intents
+
+When a deposit, swap or withdrawal is stuck on the intents side, the fix is executed by their team, not by us. Two channels, and both at once works best:
+
+- Telegram bot `@near_intents_support_bot`, which a human reviews.
+- The support form on near.com.
+
+Attach the intents hash, the deposit transaction on the origin network, the amount and the user's address. Ask the user to open a ticket too, in parallel. Do not promise a timeline: cases have taken from two days to a month.
+
 ## Other networks
 
 Same idea, different explorer. Confirm the hash exists, is confirmed, and went to the address the app showed, on the network the app showed, for the asset the app showed.

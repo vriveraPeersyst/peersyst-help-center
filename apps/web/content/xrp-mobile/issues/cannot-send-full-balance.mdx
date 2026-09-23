@@ -6,6 +6,9 @@ symptoms:
   - "Insufficient funds when I try to send everything"
   - "Max sends less than my balance"
   - "I want to empty my wallet"
+  - "Unknown error when signing"
+  - "Transaction failed, try again"
+  - "The swap fails and I have enough balance"
 resolution: "self-serve"
 collect: []
 diagnosis:
@@ -23,6 +26,10 @@ Your XRP Ledger account must keep 1 XRP on the ledger to exist (the base reserve
 ## The fix
 
 On the amount screen tap **Max** instead of typing the number. If you typed a number and it fails, lower it by a hair; the fee is a hundredth of a cent, so the reserve is what is in the way.
+
+## It fails without a clear message
+
+A swap, a send or an activation that fails at the signing step with a generic error, while the balance looks sufficient, is usually the same thing: the amount plus the fee would cross the reserve. Keep a small margin of spendable XRP in the account, above the 1 XRP reserve, and try again.
 
 ## Emptying the wallet completely
 

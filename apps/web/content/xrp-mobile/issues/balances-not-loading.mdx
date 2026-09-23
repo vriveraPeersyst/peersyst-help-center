@@ -1,0 +1,46 @@
+---
+title: "Balances or prices are not loading, or show zero"
+description: "When many people open the app at once, or a data provider is slow, balances and prices can spin, show zero or show a stale value for a few minutes. The funds are on the ledger the whole time; the explorer proves it."
+kind: "issue"
+symptoms:
+  - "My balance shows zero"
+  - "All my coins disappeared"
+  - "Prices are not loading, it just spins"
+  - "The app says invalid recovery phrase but the words are right"
+  - "The wallet shows the wrong price for a token"
+resolution: "self-serve"
+diagnosis:
+  - "Look the address up on xrpscan.com. If the balance is there, nothing moved: this is a loading problem."
+  - "Ask the user to force close the app, reopen, and pull down on the wallet home to refresh."
+  - "If everyone reports it at the same time, check the NEAR Intents status page and our own data provider, and treat it as an incident."
+  - "A zero that persists for more than an hour while the explorer shows funds: escalate as a display bug with the address and app version."
+collect:
+  - "Your XRP address"
+  - "App version and phone model"
+  - "A screenshot of the wallet home"
+related:
+  - "activity-history"
+  - "issues/hidden-token"
+  - "issues/how-to-investigate"
+---
+
+## What is going on
+
+The app reads your XRP balance from the XRP Ledger, your multichain balances from the intents layer, and prices from a market data provider. Any of the three can be slow or briefly unavailable, especially during market spikes when everyone refreshes at once. The app then shows a spinner, a zero or a stale number until the next successful load.
+
+Nothing about this touches your funds. The ledger has them regardless of what the screen says.
+
+## The fix
+
+1. Pull down on the wallet home to refresh.
+2. If that does not help, close the app completely and open it again.
+3. Check your connection, and try again in a few minutes.
+4. If you want certainty right now, look your address up on an XRP Ledger explorer such as xrpscan.com.
+
+## A related symptom
+
+During the same kind of congestion, importing a wallet can wrongly report the recovery phrase as invalid. Wait a few minutes and import again before doubting the words.
+
+## If a token disappeared but everything else loads
+
+That is a hidden token, not a loading problem: see [A token disappeared](./hidden-token).

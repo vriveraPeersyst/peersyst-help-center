@@ -1,0 +1,49 @@
+---
+title: "I think my wallet was hacked or drained"
+description: "If funds left your account without you, someone has your recovery phrase, secret numbers or private key, or has taken over the account's signing keys. Transactions cannot be reversed; what matters now is stopping further loss and understanding what happened."
+kind: "issue"
+symptoms:
+  - "My funds are gone"
+  - "I'm being drained"
+  - "Someone moved my XRP"
+  - "I shared my phrase with support and now my balance is zero"
+  - "I clicked a prize or airdrop link"
+resolution: "escalate"
+diagnosis:
+  - "Look the address up on xrpscan.com and open the outgoing transactions: destination, time and amount. Ask the user whether they made them."
+  - "On the account page check the Flags and the Regular Key. A RegularKey or SignerList the user did not set, or a disabled master key, means the attacker controls the account and it cannot be recovered even with the phrase."
+  - "Ask, without judgement, whether the phrase, secret numbers or private key were typed anywhere other than the app, or shared with anyone claiming to be support."
+  - "If the outgoing transactions are ones the user made and forgot, or a swap that is still settling, this is not a hack: redirect to the swap or activity pages."
+collect:
+  - "Your XRP address"
+  - "The hashes of the transactions you did not make"
+  - "Where the recovery phrase or secret numbers may have been entered or shared"
+related:
+  - "backup-your-wallets"
+  - "create-wallet"
+  - "issues/unknown-tiny-deposits"
+  - "faq/will-xrp-mobile-ever-ask-for-my-phrase"
+  - "issues/activity-differs-from-explorer"
+---
+
+## First, confirm it is a theft
+
+Open **Activity** and compare with the account on an explorer such as xrpscan.com. Most "my funds are gone" reports turn out to be a hidden token, a swap that is still settling, or a payment the user made from another device. If there are outgoing payments you did not make, read on.
+
+## Do this now
+
+1. **Create a new wallet** in the app, back up its phrase, and move whatever is left to it. Do not reuse the compromised wallet.
+2. If the compromised wallet was imported from another app or a browser extension, treat those as compromised too.
+3. Do not follow any link, install any "recovery" tool or pay anyone who promises to get the funds back. Recovery scams target victims within hours.
+
+## How it happens
+
+- The recovery phrase, secret numbers or private key were typed into a website, a fake app or a form, or shared with someone posing as support.
+- A "prize", "airdrop" or "verification" link asked to connect or confirm something.
+- A phone or backup was accessible to someone else.
+
+Nobody from XRP Mobile or Peersyst will ever ask for your phrase, and the app never sends it anywhere. The keys only exist on your phone.
+
+## Can the funds be recovered?
+
+No. Transactions on the XRP Ledger and on every other network are final. If the attacker also changed the account's signing keys (a regular key or a signer list, with the master key disabled), the account itself is lost even though the phrase still opens it in the app. Support can confirm exactly what happened from the explorer and help you secure a new wallet, but cannot reverse anything.

@@ -1,0 +1,41 @@
+---
+title: "I sent to an exchange from another network and it was not credited"
+description: "A send to another chain travels through the intents layer, so the exchange sees a deposit from an address it does not recognise. Some exchanges hold or refuse those deposits. The funds are at the exchange; their support credits them with the transaction hash."
+kind: "issue"
+symptoms:
+  - "I withdrew USDC to Binance on Base and it never arrived"
+  - "The transfer shows completed but the exchange shows nothing"
+  - "Bybit says the deposit is from an unsupported source"
+  - "Sent to Coinbase from my wallet via Ethereum and it is pending for days"
+resolution: "escalate"
+diagnosis:
+  - "Open the transfer's last hash on the destination network's explorer. Confirm it reached the exchange's deposit address with the right asset."
+  - "If confirmed there, the funds are with the exchange: the user opens a ticket with them and attaches that hash."
+  - "If the intents explorer shows the withdrawal leg still pending, treat it as a slow cross-chain send instead."
+collect:
+  - "The transaction hash on the destination network"
+  - "The exchange and its deposit address"
+  - "A screenshot of the deposit page you copied the address from"
+related:
+  - "send-cross-chain"
+  - "send-destination-tag"
+  - "issues/swap-taking-long"
+  - "issues/exchange-deposit-missing-tag"
+---
+
+## What is going on
+
+When you send an asset to another network, the payment that lands at the destination is made by the intents layer on your behalf, not from an address the exchange has seen before. Most exchanges credit it normally. A few hold it for review or refuse "third party" deposits, and the app warns about this on the send screen.
+
+XRP sent natively on the XRP Ledger does not have this problem.
+
+## The fix
+
+1. Copy the last hash from the transfer screen or from Activity, the one on the destination network.
+2. Check it on that network's explorer: it should show the amount arriving at the exchange's address.
+3. Open a ticket with the **exchange's support** with that hash, the amount and the time. They hold the funds and only they can credit them. It can take days.
+
+## Avoiding it next time
+
+- When the destination is an exchange, prefer sending XRP natively and swapping on the exchange.
+- Or test with a small amount first on any new route to an exchange.

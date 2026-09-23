@@ -1,0 +1,43 @@
+---
+title: "Quote unavailable: I cannot get a quote to swap or send"
+description: "A quote is a live route with real liquidity. It fails when the amount is right at the maximum, when it is under the provider's minimum for that asset, or when the route has no liquidity at that moment. Most cases are solved by changing the amount or waiting a few minutes."
+kind: "issue"
+symptoms:
+  - "Quote unavailable"
+  - "We couldn't get a quote to send"
+  - "Cotizaci\u00f3n no disponible"
+  - "No quotes when I try to swap"
+  - "I can't send my USDT, it says no quote"
+  - "It worked yesterday and not today"
+resolution: "self-serve"
+diagnosis:
+  - "Ask which asset, which destination asset or network, and the exact amount tried. Then try the same route on near-intents.org yourself: if it fails there too, it is a liquidity or provider outage, not the app."
+  - "Check status.near-intents.org (or the intents dashboard) for an ongoing incident."
+  - "If the amount is the full balance, ask the user to try slightly less. If it is tiny, compare with the asset's minimum shown on the screen."
+  - "If only one specific route fails for days (for example an asset deposited from a rarely used network), escalate so the team can ask the solver network for liquidity."
+collect:
+  - "Asset, destination asset or network, and amount tried"
+  - "A screenshot of the error"
+related:
+  - "swap"
+  - "send-cross-chain"
+  - "faq/what-does-a-swap-cost"
+  - "issues/swap-failed"
+  - "issues/hidden-token"
+---
+
+## The three usual causes
+
+**1. The amount is right at the maximum.** Tap **Max** and then reduce the amount a little, or type an amount without long decimals. A quote needs a hair of room for fees and rounding, and this alone fixes most reports.
+
+**2. The amount is under the minimum.** Every asset has a minimum per swap or send, shown on the screen (for Bitcoin it is a fraction of a coin, for stablecoins a couple of units). Below it no route exists.
+
+**3. The route has no liquidity right now.** Swaps and cross-chain sends are filled by a network of solvers. When the market moves fast, or during a provider incident, some routes stop quoting for minutes or hours. Wait and try again. Assets that arrived from a rarely used network can stay without a route for longer.
+
+## What it is not
+
+It is not a problem with your funds. Nothing has left your wallet: a quote is a question, not a transaction. You can also try a different pair (for example swap to a stablecoin first) which often has deeper liquidity.
+
+## Also check
+
+If the token you want does not even appear in the picker, it is hidden, not unquotable: see [A token disappeared](./hidden-token).

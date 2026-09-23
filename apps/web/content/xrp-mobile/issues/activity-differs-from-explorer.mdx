@@ -1,0 +1,41 @@
+---
+title: "The Activity list does not match what the explorer shows"
+description: "Activity is a convenience view, the ledger is the truth. Payments made from another device, a duplicated row, or a swap whose visible hash is only its first leg all make the two disagree without anything being wrong with your funds."
+kind: "issue"
+symptoms:
+  - "There are two transactions with the same hash"
+  - "A transaction I made on my other phone is missing"
+  - "The hash in the app is not the swap"
+  - "The transaction never opens, it keeps loading"
+  - "The app shows a payment I do not recognise"
+resolution: "agent"
+diagnosis:
+  - "Look the address up on xrpscan.com and compare the last transactions with the user's screenshot of Activity."
+  - "For a swap or cross-chain transfer, open the intents hash on explorer.near-intents.org: the app may be showing the deposit leg's hash, which looks like a plain payment."
+  - "If the explorer shows a payment the user does not recognise, read the wallet hacked page before anything else."
+  - "Two rows, one hash, one payment on the explorer: a display duplicate, harmless. Two payments on the explorer: two real transactions."
+collect:
+  - "Your XRP address"
+  - "A screenshot of Activity"
+  - "The hash you are asking about"
+related:
+  - "activity-history"
+  - "issues/swap-pending"
+  - "issues/wallet-hacked"
+  - "issues/how-to-investigate"
+---
+
+## Why they can differ
+
+- **XRP payments** are read from the XRP Ledger and appear on every device that holds the wallet.
+- **Swaps and cross-chain transfers** are tracked by the device that started them. The same wallet on a second phone shows the XRP leaving, but not the swap card with its intents hash.
+- **The hash on a swap card** may be the hash of the deposit leg, the payment that moved your XRP into the swap, rather than the swap itself. Both are real, and the explorer of NEAR Intents links one to the other.
+- **A row that opens forever** or **appears twice** is a display bug being worked on. Neither changes anything on the ledger.
+
+## What to trust
+
+The explorer. Paste your address into xrpscan.com for XRP Ledger payments, and an intents hash into explorer.near-intents.org for swaps and cross-chain transfers. If the explorer and Activity disagree, the explorer is right, and support will use it too.
+
+## If the explorer shows something you did not do
+
+Stop and read [I think my wallet was hacked or drained](./wallet-hacked).

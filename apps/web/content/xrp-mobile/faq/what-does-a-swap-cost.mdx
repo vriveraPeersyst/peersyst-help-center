@@ -14,4 +14,12 @@ The confirmation screen before a swap shows every cost:
 - **Provider fee.** A percentage charged by the swap route (0.88% at the time of writing), already included in the quoted rate. What the screen says you get is what you get.
 - **Max slippage, 1%.** The worst rate you accept if the market moves while the swap settles. If it moves further than that, the swap fails and your XRP comes back instead of filling badly.
 
+## Why I receive less than the market value shown
+
+The balance screen prices your holdings at a mid market rate. A swap quote is the rate a solver will actually fill at, minus the provider fee, and it moves with liquidity and with the size of the swap. A difference of a fraction of a percent is normal; a larger one means thin liquidity on that pair at that moment, and splitting the swap or waiting usually improves it.
+
+## Can I set a price and wait?
+
+No. There are no limit orders. A swap fills at the current quote when you confirm, or fails if the market moves beyond the slippage limit.
+
 Cross-chain sends show the routing cost the same way: the summary tells you what you send and what the recipient receives, and the difference is the cost.

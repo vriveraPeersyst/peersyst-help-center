@@ -1,0 +1,37 @@
+---
+title: "A token disappeared, or cannot be picked for a swap or a send"
+description: "The token is hidden, not gone. Hidden tokens drop out of the balance list and out of the swap and send pickers, which looks exactly like a missing balance. Unhide it from its details screen."
+kind: "issue"
+symptoms:
+  - "My coins disappeared from the wallet"
+  - "The balance shows zero but the explorer shows funds"
+  - "The swap only lets me pick the same token on both sides"
+  - "I can't select the token I want to send"
+  - "There is a 'Show 1 filtered token' line at the bottom of my balances"
+resolution: "self-serve"
+diagnosis:
+  - "Ask for a screenshot of Wallet, Currencies, scrolled to the bottom. A 'Show N filtered tokens' row means tokens are hidden."
+  - "Look the address up on xrpscan.com: if the balance is there, nothing moved and this is the cause."
+  - "If nothing is hidden and the explorer shows the funds, treat it as balances not loading."
+collect: []
+related:
+  - "issues/balances-not-loading"
+  - "swap"
+  - "send-xrp"
+  - "getting-started-tour"
+---
+
+## What is going on
+
+Any token in the balance list can be hidden from its details screen, with the eye icon at the top right. A hidden token leaves the list, and also leaves the pickers in Swap and Send, so a swap that "only offers the same token twice" or a send that "cannot find the token" is almost always a token that was hidden, usually by accident while tapping around.
+
+Your funds never moved. Hiding is a display setting on this phone.
+
+## The fix
+
+1. Go to the wallet home and scroll to the bottom of the balance list.
+2. Tap **Show filtered tokens**.
+3. Tap the token to open its details, then tap the **eye icon** at the top right to unhide it.
+4. Go back. The token is in the list again and can be selected everywhere.
+
+If the eye icon does not seem to react, tap it once more and check the list: it is easy to hide it again by tapping twice.
