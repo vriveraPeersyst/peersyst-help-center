@@ -1,0 +1,48 @@
+---
+title: "Where are my XRPL tokens, IOUs, NFTs or MPTs?"
+description: "This first version of XRP Mobile supports sending and receiving XRP on the XRP Ledger, plus swaps and multichain assets through NEAR Intents. Tokens issued on the XRP Ledger itself (IOUs and trust lines, NFTs, MPTs) are still in your account on the ledger, but the app does not show or move them yet."
+kind: "issue"
+symptoms:
+  - "I imported my Xaman account and my tokens are missing"
+  - "My RLUSD, SOLO or other XRPL token does not show"
+  - "My NFTs are not in the app"
+  - "The explorer shows tokens and trust lines that the app does not"
+  - "How do I add a trust line"
+  - "Where is the DEX, AMM, escrow or checks"
+resolution: "self-serve"
+diagnosis:
+  - "Look the address up on xrpscan.com: the Tokens and NFTs tabs list what the account holds on the ledger. If they are there, nothing is lost; the app simply does not display them yet."
+  - "If the user needs to move them now, the same recovery phrase or secret numbers open the account in another XRP Ledger wallet."
+  - "If the report is about a multichain asset (USDC, BTC, ETH) rather than an XRPL issued token, it is a different case: see the hidden token and cross-chain deposit pages."
+collect: []
+related:
+  - "import-secret-numbers"
+  - "import-mnemonic"
+  - "faq/which-xrpl-features-are-supported"
+  - "issues/hidden-token"
+  - "faq/which-tokens-and-networks"
+---
+
+
+## What is going on
+
+XRP Mobile is an XRP Ledger wallet, but this first version deliberately covers a narrow slice of the ledger: **sending and receiving XRP**, plus the whole **swap and multichain layer** through NEAR Intents (Bitcoin, Ether, stablecoins and the rest). Everything else the XRP Ledger can do is not in the app yet:
+
+- Tokens issued on the XRP Ledger (IOUs held through trust lines, such as RLUSD or community tokens)
+- NFTs
+- MPTs (multi purpose tokens)
+- The on ledger DEX and AMMs, escrows, checks, payment channels and the other amendments
+
+If you imported an account from Xaman or another wallet that held any of these, they are **still in your account on the ledger**. The app does not show them and cannot move them yet, but nothing was lost or changed by importing.
+
+## Check for yourself
+
+Look your address up on an XRP Ledger explorer such as xrpscan.com. The **Tokens** and **NFTs** tabs list exactly what the account holds. That is the source of truth, and it does not depend on which wallet app you use.
+
+## If you need to use them now
+
+Your recovery phrase or secret numbers open the same account in any other XRP Ledger wallet. You can manage the tokens or NFTs there and keep using XRP Mobile for XRP and swaps: it is one account, and both apps see the same balance.
+
+## What is coming
+
+IOUs and other XRP Ledger tokens are next, and the plan is to keep adding XRP Ledger features and amendments release by release. Turn on notifications in the app to hear about it.

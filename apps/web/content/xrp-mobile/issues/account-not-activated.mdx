@@ -7,6 +7,7 @@ symptoms:
   - "I created a wallet and can't send or swap"
   - "It says I need to deposit 1 XRP first"
   - "My address shows as not found on the explorer"
+  - "Someone sent me 0.5 XRP and it never arrived"
 resolution: "self-serve"
 collect: []
 diagnosis:
@@ -36,5 +37,5 @@ Nothing is broken. This is how every XRP Ledger wallet works, including exchange
 ## Still showing after the deposit?
 
 - Check the address you sent to matches the one in the app, first and last characters.
-- Check the amount was at least 1 XRP **after** the sender's own fees. Exchanges sometimes deduct a withdrawal fee from the amount.
+- Check the amount was at least 1 XRP **after** the sender's own fees. Exchanges sometimes deduct a withdrawal fee from the amount. A first deposit under 1 XRP is refused by the ledger and stays with the sender: it does not queue up, it simply never happens.
 - Look the address up on an XRP Ledger explorer such as xrpscan.com. If the explorer shows a balance, pull down on the wallet home to refresh. If the explorer says the account does not exist, the deposit has not arrived on the ledger and the sender needs to check their side.
